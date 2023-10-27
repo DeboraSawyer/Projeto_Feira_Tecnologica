@@ -1,0 +1,139 @@
+<main>
+    <!-- Texto em movimento. -->
+    <section class="box">
+        <div class="textomovimento">
+            <p>Saúde mental é</p>
+            <div class="palavras">
+                <span> </span>
+                <span>estabilidade.</span>
+                <span>serenidade.</span>
+                <span>qualidade.</span>
+                <span>harmonia.</span>
+                <span>paz.</span>
+                <span>crucial.</span>
+                <span>equilíbrio.</span>
+                <span>fundamental.</span>
+                <span>bem-estar.</span>
+                <span>paz.</span>
+                <span>resiliência.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de busca. -->
+    <section class="search-container">
+
+        <!-- Procure por Especialidade. -->
+        <div class="search-category">
+            <select id="specialty">
+                <option value="all" disabled selected>Escolha uma especialidade</option>
+                <option class="opcoes" value="psicologia_clinica">Psicologia Clínica</option>
+                <option value="psicologia_organizacional">Psicologia Organizacional e do Trabalho</option>
+                <option value="psicologia_escolar">Psicologia Escolar e Educacional</option>
+                <option value="psicologia_social">Psicologia Social</option>
+                <option value="psicologia_esporte">Psicologia do Esporte</option>
+                <option value="psicologia_trafego">Psicologia do Tráfego</option>
+                <option value="psicologia_hostpitalar">Psicologia Hospitalar</option>
+                <option value="psicologia_juridica">Psicologia Jurídica</option>
+                <option value="psicologia_desenvolvimento">Psicologia do Desenvolvimento</option>
+                <option value="Neuropsicologia">Neuropsicologia</option>
+                <option value="psicologia_comportamental">Psicologia Clínica Comportamental</option>
+                <option value="psicologia_saude">Psicologia da Saúde</option>
+                <option value="psicologia_familiar">Psicologia Familiar e de Casais</option>
+                <option value="psicologia_positiva">Psicologia Positiva</option>
+                <option value="psicologia_gerontologica">Psicologia Gerontológica</option>
+                <option value="psicologia_consumidor">Psicologia do Consumidor</option>
+                <option value="psicologia_transcultural">Psicologia Transcultural</option>
+            </select>
+        </div>
+
+        <!-- Procure por Abordagem. -->
+        <div class="search-category">
+            <select id="approaches">
+                <option value="all" disabled selected>Escolha uma abordagem</option>
+                <option value="Abordagem_psicanalitica">Abordagem Psicanalítica</option>
+                <option value="Abordagem_comportamental">Abordagem Comportamental</option>
+                <option value="Abordagem_cognitiva">Abordagem Cognitiva</option>
+                <option value="Abordagem_cognitivo">Abordagem Cognitivo-Comportamental</option>
+                <option value="Abordagemp_humanista">Abordagem Humanista</option>
+                <option value="Abordagem_existencial">Abordagem Existencial</option>
+                <option value="Abordagem_sistemica">Abordagem Sistêmica/Familiar</option>
+                <option value="Abordagem_psicodinamica">Abordagem Psicodinâmica</option>
+                <option value="Abordagem_gestalt">Abordagem Gestalt</option>
+                <option value="Abordagem_psicobiologica">Abordagem Psicobiologica</option>
+                <option value="Abordagem_transpessoa">Abordagem Transpessoal</option>
+                <option value="Abordagem_analitica">Abordagem Analítica</option>
+                <option value="Abordagem_feminista">Abordagem Feminista</option>
+                <option value="Abordagem_multicultural">Abordagem Multicultural</option>
+                <option value="Abordagem_construtivista">Abordagem Construtivista</option>
+                <option value="Abordagem_integral">Abordagem Integral</option>
+            </select>
+        </div>
+
+        <!-- Procure por nome. -->
+        <div class="search-category">
+            <input type="text" id="name" placeholder="Digite o nome do profissional...">
+        </div>
+
+        <!-- Botão de procura. -->
+        <button id="search-button">Procurar</button>
+    </section>
+
+    <!-- Resultado. -->
+    <div id="search-results"></div>
+
+    <!-- Título da página. -->
+    <section>
+        <div class="tituloPerfis">
+            <h1>Psicólogos disponíveis para agendamento online</h1>
+        </div>
+    </section>
+
+    <!-- Card. -->
+    <section class="card-container">
+        <!-- Perfis. -->
+        <div class="card" *ngFor="let perfil of perfisVisiveis">
+            <div class="profile-picture">
+                <img [src]="perfil.imagem_src" alt="{{ perfil.nome }}">
+            </div>
+
+            <h3>{{ perfil.nome }}</h3>
+            <p class="p">{{ perfil.especialidade }}</p>
+
+            <p class="sbt">Especializações:</p>
+            <p class="cb">{{ perfil.especializacao1 }}</p>
+            <p class="cb">{{ perfil.especializacao2 }}</p>
+            <p class="cb">{{ perfil.especializacao3 }}</p>
+
+            <p class="sbt">Abordagem Terapêutica:</p>
+            <p>{{ perfil.abordagem }}</p>
+
+            <p class="sbt">Biografia:</p>
+            <p>{{ perfil.biografia }}</p>
+
+            <!-- Botão perfil completo. -->
+            <!--<a href="perfil-psicologo1.html" class="btn0">Perfil completo</a>-->
+            <a [routerLink]="'perfil-psicologo/' + perfil.id" class="btn0">Perfil completo</a>
+
+            <!-- Botão perfil completo. -->
+            <!--<a href="marcar-consulta-psicologo1.html" class="btn">Marcar consulta</a>-->
+            <a [routerLink]="'marcar-consulta-psicologo/' + perfil.id" class="btn">Marcar consulta</a>
+        </div>
+    </section>
+
+    <div class="hibrido">
+        <!-- Botão Ver mais. -->
+        <!--<button class="ver-mais" [class]="botaoClass" (click)="toggleMostrarMais()">{{ botaoLabel }}</button>-->
+        <button class="ver-mais" (click)="toggleMostrarMais()">{{ botaoLabel }}</button>
+    </div>
+
+    <!-- Aviso. -->
+    <section class="av">
+        <div class="aviso">
+            <p>Atenção: Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida.
+                Em caso de crise, ligue para 188 (CVV) ou acesse o site www.cvv.org.br. Em caso de emergência,
+                procure atendimento em um hospital mais próximo.
+            <p>
+        </div>
+    </section>
+</main>

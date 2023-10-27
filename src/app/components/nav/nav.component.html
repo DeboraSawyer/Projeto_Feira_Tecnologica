@@ -1,0 +1,40 @@
+<nav>
+    <!-- Logo. -->
+    <div class="logo">
+        <img src="assets/imagens/logo-aobem.png" alt="Logo AOBEM">
+    </div>
+
+    <!-- Menu Hambúrguer. -->
+    <div class="hamburger-menu">
+        <div class="hamburger" [ngClass]="{ 'active': isHamburgerActive }" (click)="toggleHamburger()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+
+        <!-- Lista de menu. -->
+        <ul>
+            <!-- Menu home. --> <!-- routerLinkActive="active": Mantém o link ativado após selecionado. -->
+            <li><a class="ancora nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a></li>
+
+            <!-- Menu recursos. -->
+            <li><a class="ancora nav-link" [routerLink]="['/recursos']" routerLinkActive="active">Recursos</a></li>
+
+            <!-- Menu perfis. -->
+            <li><a class="ancora nav-link" [routerLink]="['/perfis']" routerLinkActive="active">Perfis</a></li>
+
+            <!-- Menu contato. -->
+            <li><a class="ancora nav-link" [routerLink]="['/contato']" routerLinkActive="active">Contato</a></li>
+
+            <!-- Menu login. -->
+            <li><a class="ancora nav-link" [routerLink]="['/login']" routerLinkActive="active">Login</a></li>
+
+            <!-- Menu cadastrar. -->
+            <li><a class="ancora nav-link" [routerLink]="['/cadastrar']" routerLinkActive="active">Cadastrar</a>
+            </li>
+
+            <!-- Menu/Botão triagem. -->
+            <li><a [routerLink]="['/triagem']" class="button-link" routerLinkActive="active">Triagem</a></li>
+        </ul><!-- Fim da lista. -->
+    </div>
+</nav>

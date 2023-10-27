@@ -1,0 +1,154 @@
+/* Estilo do menu. */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*padding: 10px 110px;/* Espaçamento do logo e do botão. */
+    padding: 10px 10px;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.3);
+    /* Esta é a cor em hex #9CAAF6; Azul. */
+    z-index: 1000;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    /* Bold. */
+    font-size: 16px;
+}
+
+ul li {
+    margin-right: 20px;
+    list-style: none;
+}
+
+ul .ancora {
+    text-decoration: none;
+    color: #000;
+    /*font-size: 2.0vh;*/
+    /* Se o menu ficar muito pequeno basta ativar esse. */
+}
+
+ul .ancora:hover {
+    color: #113A76;
+    border-bottom: 3px solid #FFF599;
+    /* #FFF599 Amarelo; #FFBC7E Laranja. */
+}
+
+/* Estilo do botão primário. */
+ul .button-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #113A76;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    border: 3px solid #113A76;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.button-link:hover {
+    transform: translateY(-5px);
+    /* Move o botão 5 pixels para cima ao passar o mouse. */
+}
+
+/* Estilo do logo. */
+.logo img {
+    width: 100px;
+    height: auto;
+    margin-left: 20px;
+    /* Retirar se menu ham ficar torto. */
+}
+
+/* Link ativado. */
+.nav-link.active {
+    color: #113A76;
+    border-bottom: 3px solid #FFF599;
+}
+
+/* FIM DO MENU (NORMAL). */
+
+/* Estilo do Menu hambúrguer. */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #113A76;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Estilo do X quando aberto. */
+.hamburger.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-7px, -7px);
+}
+
+/* Estilo do botão Triagem no menu responsivo. */
+.button-link {
+    display: none;
+}
+
+/* FIM DO MENU (HUMBÚRGUER). */
+
+/* Botão Triagem no menu repsonsivo para dispositivos móveis aqui. */
+@media (max-width: 840px) {
+
+    /* Mostra o Menu hambúrguer e oculta o menu principal. */
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 81px;
+        left: 15%;
+        right: 15%;
+        padding: 10px 0 20px 0;
+        background: rgba(156, 170, 246, 0.3);
+        border-radius: 0 0 50px 50px;
+        transition: 0.5s;
+        /* Transição mais lenta */
+    }
+
+    ul li {
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Mostra o botão TRIAGEM no menu responsivo. */
+    .button-link {
+        display: block;
+    }
+
+    /* Estilo do Menu hambúrguer quando está ativo. */
+    .hamburger.active+ul {
+        display: flex;
+    }
+}

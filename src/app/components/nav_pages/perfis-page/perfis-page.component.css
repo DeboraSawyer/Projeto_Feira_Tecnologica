@@ -1,0 +1,733 @@
+main {
+    border: 3px solid red;
+}
+
+/* ANIMAÇÃO DO TEXTO. */
+
+.box {
+    border: 3px solid rgb(0, 238, 255);
+    height: 380px;
+    display: grid;
+    place-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    /*29px;*/
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.textomovimento {
+    background-color: #fff;
+    color: #FFBC7E;
+    height: 50px;
+    box-sizing: content-box;
+    margin-top: 72px;
+    padding: 50px 30px;
+    display: flex;
+    overflow: hidden;
+}
+
+.palavras {
+    overflow: hidden;
+}
+
+span {
+    color: #9CAAF6;
+    display: block;
+    height: 100px;
+    padding-left: 15px;
+    /*animation: spin_words 10s infinite;*/
+    animation: spin_words 5s linear 0s infinite;
+}
+
+@keyframes spin_words {
+    10% {
+        transform: translateY(-112%);
+    }
+
+    25% {
+        transform: translateY(-100%);
+    }
+
+    35% {
+        transform: translateY(-212%);
+    }
+
+    50% {
+        transform: translateY(-200%);
+    }
+
+    60% {
+        transform: translateY(-312%);
+    }
+
+    75% {
+        transform: translateY(-300%);
+    }
+
+    85% {
+        transform: translateY(-412%);
+    }
+
+    100% {
+        transform: translateY(-400%);
+    }
+}
+
+/* FIM DA ANIMAÇÃO DO TEXTO. */
+
+/* BARRAS DE PROCURA. */
+
+.search-container {
+    border: 3px solid yellow;
+    text-align: center;
+    background: rgba(255, 188, 126, 0.1);
+    /* Esta é a cor em hex #FFBC7E; Laranja. */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.search-category {
+    margin: 10px;
+    display: inline-block;
+}
+
+#specialty,
+#approaches,
+#name {
+    width: 370px;
+    padding: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 10px;
+    border: 3px solid #113A76;
+    border-radius: 10px solid #113A76;
+    background-color: #f5f6fe;
+}
+
+/* Estilo do botão secundário. */
+#search-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #9CAAF6;
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    border: 3px solid #9CAAF6;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#search-button:hover {
+    transform: scale(1.1);
+    /* Aumenta em 10%. */
+    background-color: #d7ddfb;
+    border: 3px solid #d7ddfb;
+}
+
+#search-results {
+    text-align: center;
+}
+
+/* FIM DA BARRA PROCURA. */
+
+.tituloPerfis {
+    justify-content: center;
+    border: 3px solid blueviolet;
+    display: flex;
+    text-transform: uppercase;
+    padding: 20px 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 245, 153, 0.1);
+    /* Esta é a cor em hex #FF599; Amarelo. */
+    font-size: 16px;
+    color: #113A76;
+    font-family: 'Inter', sans-serif;
+}
+
+/* FIM DO TÍTULO. */
+
+/* Estilos do container. */
+.card-container {
+    border: 3px solid aqua;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1300px;
+    /* Define uma largura máxima para o contêiner. */
+    margin: 0 auto;
+    /* Centraliza o contêiner horizontalmente. */
+    min-height: 100vh;
+    /* Garante que o contêiner tenha pelo menos 100% da altura da janela de visualização. */
+}
+
+/* Estilos dos cards. */
+.card {
+    border: 1.16px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    flex: 0 0 calc(50% - 60px);
+    /* 2 cards por linha com 60px de espaço entre eles. */
+    margin: 30px;
+    margin-top: 80px;
+    max-height: 700px;
+    /* Define a altura máxima para os cards. */
+}
+
+/* Estilos das imagens dos psicólogos. */
+.card .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: -50px auto 10px auto;
+    position: relative;
+}
+
+.card .profile-picture img {
+    width: 100%;
+    height: 100%;
+    border: 1.16px solid #ccc;
+    width: 150px;
+    /* Largura maior para parecer que a imagem está saindo do card. */
+    height: 150px;
+    /* Altura maior para parecer que a imagem está saindo do card. */
+    position: absolute;
+    top: -25px;
+    /* Posição para que a imagem saia parcialmente do card. */
+    left: -25px;
+    /* Posição para que a imagem saia parcialmente do card. */
+    border-radius: 50%;
+}
+
+/* Estilos do cabeçalho. */
+.card h3 {
+    /*font-size: 1.7em;*/
+    /*font-size: 1.5em;*/
+    margin-top: 35px;
+}
+
+/* Título do profissional. */
+.card .p {
+    font-size: 1.3rem;
+    margin-top: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card .cb {
+    display: inline-block;
+    background-color: #FFBC7E;
+    color: #113A76;
+    border: 3px solid #FFBC7E;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo dos textos dentro dos cards. */
+.card>.sbt {
+    margin: 20px 0 5px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 5px 0;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Estilo do botão Perfil completo. */
+.btn0 {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    border: 3px solid #113A76;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 30px;
+    text-decoration: none;
+}
+
+/* Estilo do botão Marcar consulta. */
+.btn {
+    display: inline-block;
+    background-color: #113A76;
+    color: #fff;
+    border: 3px solid #113A76;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 30px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    /* Animação de 0.3 segundos na propriedade de background. */
+}
+
+.btn0:hover {
+    background: linear-gradient(to right, #fff, #FFF599);
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #113A76, #FFBC7E);
+}
+
+/* Estilo do botão Ver mais. */
+.hibrido {
+    border: 3px solid yellow;
+    padding-bottom: 30px;
+    max-width: 1300px;
+    /* Define uma largura máxima para o contêiner. */
+    margin: 0 auto;
+    /* Centraliza o contêiner horizontalmente. */
+}
+
+.ver-mais {
+    display: block;
+    /* Torna o botão um bloco para alinhar ao centro. */
+    margin: 0 auto;
+    /* Alinha horizontalmente ao centro. */
+    background-color: #113A76;
+    color: #fff;
+    border: 3px solid #113A76;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ver-mais:hover {
+    transform: scale(1.1);
+    /* Aumenta em 10%. */
+}
+
+/* Estilo do botão Voltar. */
+.botao-voltar {
+    background-color: #fff;
+    color: #113A76;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.botao-voltar:hover {
+    transform: scale(1.1);
+    /* Aumenta em 10%. */
+}
+
+/* FIM DOS CARDS. */
+
+.av {
+    background-color: #FFBC7E;
+    border: 3px solid #FFBC7E;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 50px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
+    /* Coloca o aviso na frente do footer. */
+}
+
+.aviso {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* FIM DO AVISO. */
+
+@media (max-width: 200px)
+
+/*and (max-width: 299px)*/
+    {
+    main {
+        border: 3px solid red;
+        /*width: 361px;*/
+    }
+
+    .box {
+        border: 3px solid rgb(0, 238, 255);
+        height: 380px;
+        display: block;
+        width: 361px;
+    }
+
+    .textomovimento {
+        margin-top: 95px;
+        padding: 80px 21px;
+        display: block;
+        font-size: 35px;
+        background-color: transparent;
+    }
+
+    .palavras {
+        padding: 10px 0 0 30px;
+        overflow: hidden;
+    }
+
+    span {
+        padding: 0;
+        animation: spin_words 10s linear 0s infinite;
+    }
+
+    .search-container {
+        border: 3px solid yellow;
+        width: 354px;
+        /*361px*/
+        padding: 30px 0;
+    }
+
+    .tituloPerfis {
+        width: 354px;
+    }
+
+    .card {
+        max-height: 950px;
+        width: 50px;
+    }
+
+
+    /* Estilo do botão Perfil completo. */
+    .btn0 {
+        padding: 12px 19px;
+        margin: 20px 0 -20px 0;
+    }
+
+    /* Estilo do botão Marcar consulta. */
+    .btn {
+        padding: 12px 19px;
+        margin: 30px 0 20px 0;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    main {
+        border: 3px solid red;
+        /*width: 363px;*/
+    }
+
+    .textomovimento {
+        padding: 10px 25px;
+        height: 90px;
+        display: block;
+        font-size: 30px;
+        background-color: transparent;
+    }
+
+    .palavras {
+        padding: 10px 0 0 19px;
+    }
+
+    span {
+        padding: 0;
+        animation: spin_words 10s linear 0s infinite;
+    }
+
+    /* FIM DA ANIMAÇÃO DO TEXTO. */
+
+    .search-container {
+        border: 3px solid yellow;
+        padding: 30px 0px;
+    }
+
+    /* FIM DA BARRA DE PROCURA. */
+
+    /* Estilos dos cards. */
+    .card {
+        max-height: 950px;
+        width: 50px;
+    }
+
+    /* Estilo do botão Perfil completo. */
+    .btn0 {
+        margin: 20px 0 -20px 0;
+    }
+
+    /* Estilo do botão Marcar consulta. */
+    .btn {
+        margin: 30px 0 20px 0;
+    }
+
+    .av {
+        margin-bottom: -150px;
+    }
+}
+
+/* FALTA ESTA PARTE 400PX DO PROJETO ORIGINAL. */
+/* Estilos gerais (para telas pequenas). */
+@media (min-width: 400px) and (max-width: 499px) {
+    main {
+        border: 3px solid red;
+        /*width: 395px;*/
+    }
+
+    .textomovimento {
+        height: 90px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    .palavras {
+        padding: 10px 0 0 19px;
+    }
+
+    span {
+        padding: 0;
+        animation: spin_words 10s linear 0s infinite;
+    }
+
+    /* FIM DA ANIMAÇÃO DO TEXTO. */
+
+    .search-category {
+        margin: 10px;
+        display: block;
+    }
+
+    /* FIM DA BARRA DE PROCURA. */
+
+    /* Estilos dos cards. */
+    .card {
+        max-height: 850px;
+        width: 50px;
+    }
+
+    /* Estilo do botão Perfil completo. */
+    .btn0 {
+        margin: 20px 0 -20px 0;
+    }
+
+    /* Estilo do botão Marcar consulta. */
+    .btn {
+        margin: 30px;
+    }
+
+    .av {
+        margin-bottom: -150px;
+    }
+}
+
+/* Estilos gerais (para telas pequenas). */
+@media (min-width: 500px) and (max-width: 585px) {
+    main {
+        border: 3px solid red;
+        /*width: 495px;*/
+    }
+
+    .textomovimento {
+        height: 90px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    .palavras {
+        padding: 10px 0 0 30px;
+    }
+
+    span {
+        padding: 0;
+        animation: spin_words 10s linear 0s infinite;
+    }
+
+    /* FIM DA ANIMAÇÃO DO TEXTO. */
+
+    .search-category {
+        margin: 10px;
+        display: block;
+    }
+
+    /* FIM DA BARRA DE PROCURA. */
+
+    /* Estilos dos cards. */
+    .card {
+        max-height: 850px;
+        width: 50px;
+    }
+
+    /* Estilo do botão Perfil completo. */
+    .btn0 {
+        margin: 20px 0 -20px 0;
+    }
+
+    /* Estilo do botão Marcar consulta. */
+    .btn {
+        border-radius: 10px;
+        margin: 30px;
+    }
+}
+
+/* Estilos gerais (para telas pequenas). */
+@media (min-width: 586px) and (max-width: 699px) {
+    main {
+        border: 3px solid red;
+        /*width: 582px;*/
+    }
+
+    .textomovimento {
+        height: 90px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 35px;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    .palavras {
+        padding: 10px 0 0 30px;
+    }
+
+    span {
+        padding: 0;
+        animation: spin_words 10s linear 0s infinite;
+    }
+
+    /* FIM DA ANIMAÇÃO DO TEXTO. */
+
+    /* Estilos dos cards. */
+    .card {
+        max-height: 850px;
+        width: 50px;
+    }
+
+    /* Estilo do botão Perfil completo. */
+    .btn0 {
+        margin: 29px;
+    }
+
+    /* Estilo do botão Marcar consulta. */
+    .btn {
+        margin: 29px;
+    }
+}
+
+/* Estilos gerais (para telas pequenas). */
+@media (min-width: 700px) and (max-width: 800px) {
+    main {
+        border: 3px solid red;
+        /*width: 698px;*/
+    }
+
+    .textomovimento {
+        height: 90px;
+        display: block;
+        text-transform: uppercase;
+        font-size: 40px;
+        font-weight: bold;
+        background-color: transparent;
+    }
+
+    .palavras {
+        padding: 10px 0 0 30px;
+    }
+
+    span {
+        padding: 0;
+        animation: spin_words 10s linear 0s infinite;
+    }
+
+    /* FIM DA ANIMAÇÃO DO TEXTO. */
+}
+
+/* Está pronto. */
+/* Estilos gerais (para telas pequenas). */
+@media (min-width: 801px) and (max-width: 1146px) {
+    main {
+        border: 3px solid red;
+        /*width: 793px;*/
+    }
+
+    .textomovimento {
+        font-size: 40px;
+    }
+}
+
+/* Está pronto.*/
+/* Estilos para telas grandes (por exemplo, desktops). */
+@media (max-width: 1147px) {
+    .button-link {
+        padding: 16px 32px;
+        /* Aumenta ainda mais o tamanho do botão. */
+        font-size: 24px;
+        /* Aumenta ainda mais o tamanho do botão. */
+    }
+
+    .card {
+        flex: 0 0 calc(100% - 60px);
+        /* 3 cards por linha com mais espaçamento. */
+        margin: 33px;
+        /* Aumenta o espaçamento entre os cards. */
+    }
+
+    .card h3 {
+        font-size: 1.5em;
+        /* Aumenta ainda mais o tamanho do cabeçalho do card. */
+    }
+
+    .card .p {
+        font-size: 1.3rem;
+        /* Aumenta ainda mais o tamanho do texto do card. */
+    }
+
+    .av {
+        margin-bottom: -60px;
+    }
+}
+
+/* Está pronto.*/
+/* Estilos para telas grandes (por exemplo, desktops). */
+@media (max-width: 1280px) {
+    .search-category {
+        margin: 10px;
+        display: block;
+    }
+
+    #specialty,
+    #approaches,
+    #name {
+        width: 330px;
+        padding: 5px;
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    option {
+        font-size: 16px;
+        background-color: #9CAAF6;
+        font-weight: bold;
+        color: #113A76;
+    }
+
+    /* Estilo do botão secundário. */
+    #search-button {
+        display: block;
+        padding: 10px 15px;
+        margin: 0 auto;
+        background-color: #9CAAF6;
+        color: #113A76;
+        font-weight: bold;
+    }
+
+    /* FIM DA BARRA DE PROCURA. */
+}
