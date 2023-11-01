@@ -111,13 +111,11 @@
             <p class="sbt">Biografia:</p>
             <p>{{ perfil.biografia }}</p>
 
-            <!-- Botão perfil completo. -->
-            <!--<a href="perfil-psicologo1.html" class="btn0">Perfil completo</a>-->
-            <a [routerLink]="'perfil-psicologo/' + perfil.id" class="btn0">Perfil completo</a>
+            <!-- Botão Perfil completo. -->
+            <a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil completo</a>
 
-            <!-- Botão perfil completo. -->
-            <!--<a href="marcar-consulta-psicologo1.html" class="btn">Marcar consulta</a>-->
-            <a [routerLink]="'marcar-consulta-psicologo/' + perfil.id" class="btn">Marcar consulta</a>
+            <!-- Botão Marcar consulta. -->
+            <a class="btn" [routerLink]="['/login']" >Marcar consulta</a>
         </div>
     </section>
 

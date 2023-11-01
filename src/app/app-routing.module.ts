@@ -7,6 +7,7 @@ import { PerfisPageComponent } from './components/nav_pages/perfis-page/perfis-p
 import { LonginPageComponent } from './components/nav_pages/longin-page/longin-page.component';
 import { TriagemPageComponent } from './components/nav_pages/triagem-page/triagem-page.component';
 import { CadastroPageComponent } from './components/nav_pages/cadastro-page/cadastro-page.component';
+import { PerfilPsicologoPageComponent } from './components/web_pages/perfil-psicologo-page/perfil-psicologo-page.component';
 
 const routes: Routes = [
   { path: 'home', component: HomePageComponent},
@@ -15,8 +16,9 @@ const routes: Routes = [
   { path: 'contato', component: ContatoPageComponent},
   { path: 'login', component: LonginPageComponent},
   { path: 'cadastrar', component: CadastroPageComponent},
-  { path: 'triagem', component: TriagemPageComponent}
+  { path: 'triagem', component: TriagemPageComponent},
   // Adicionar mais caminhos.
+  { path: 'perfil-completo/:id', component: PerfilPsicologoPageComponent}
 ];
 
 @NgModule({

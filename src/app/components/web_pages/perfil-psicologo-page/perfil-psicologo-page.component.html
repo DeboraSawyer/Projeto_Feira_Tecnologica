@@ -1,0 +1,44 @@
+<main>
+    <!-- Card. -->
+    <section class="card-container">
+        <!-- Perfis. -->
+        <div class="card">
+            <div class="profile-picture">
+                <img [src]="psicologo.imagem_src" alt="{{ psicologo.nome }}">
+            </div>
+
+            <h3>{{ psicologo.nome }}</h3>
+            <p class="p">{{ psicologo.especialidade }}</p>
+
+            <p class="sbt">Temas que trabalho:</p>
+            <p class="cb">{{ psicologo.especializacao1 }}</p>
+            <p class="cb">{{ psicologo.especializacao2 }}</p>
+            <p class="cb">{{ psicologo.especializacao3 }}</p>
+
+            <p class="sbt">Abordagem:</p>
+            <p>{{ psicologo.abordagem }}</p>
+
+            <p class="sbt">Biografia:</p>
+            <p>{{ psicologo.biografia }}</p>
+
+            <p class="sbt">Qualificação:</p>
+            <p class="sbt">Formação Acadêmica</p>
+            <p>{{ psicologo.formacao1 }}</p>
+            <p>{{ psicologo.formacao2 }}</p>
+
+            <p class="sbt">Experiência Profissional</p>
+            <p>{{ psicologo.experiencia1 }}</p>
+            <p>{{ psicologo.experiencia2 }}</p>
+            <p>{{ psicologo.experiencia3 }}</p>
+
+            <p class="sbt">Atividades Adicionais</p>
+            <p>{{ psicologo.atividade1 }}</p>
+            <p>{{ psicologo.atividade2 }}</p>
+            <p>{{ psicologo.atividade3 }}</p>
+
+            <p class="sbt">Contatos:</p>
+            <p>{{ psicologo.email }}</p>
+            <p>{{ psicologo.telefone }}</p>
+        </div>
+    </section>
+</main>

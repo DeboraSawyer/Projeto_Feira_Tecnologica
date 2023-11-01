@@ -13,6 +13,7 @@ import { ContatoPageComponent } from './components/nav_pages/contato-page/contat
 import { LonginPageComponent } from './components/nav_pages/longin-page/longin-page.component';
 import { CadastroPageComponent } from './components/nav_pages/cadastro-page/cadastro-page.component';
 import { TriagemPageComponent } from './components/nav_pages/triagem-page/triagem-page.component';
+import { PerfilPsicologoPageComponent } from './components/web_pages/perfil-psicologo-page/perfil-psicologo-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { TriagemPageComponent } from './components/nav_pages/triagem-page/triage
     ContatoPageComponent,
     LonginPageComponent,
     CadastroPageComponent,
-    TriagemPageComponent
+    TriagemPageComponent,
+    PerfilPsicologoPageComponent
   ],
   imports: [
     BrowserModule,
