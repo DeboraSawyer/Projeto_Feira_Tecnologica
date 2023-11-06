@@ -1,0 +1,44 @@
+<main>
+    <div class="box">
+        <form action="">
+            <fieldset>
+
+                <legend>
+                    <h2><b>Cadastro de Pacientes</b></h2>
+                </legend>
+                <br>
+
+                <div class="inputbox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput"><b>Nome Completo:</b></label>
+                </div>
+                <br><br>
+
+                <div class="inputbox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="nome" class="labelInput"><b>Email:</b></label>
+                </div>
+                <br><br>
+
+                <div class="inputbox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone" class="labelInput"><b>Telefone:</b></label>
+                </div>
+                <br><br>
+
+                <label for="data_nascimento"><b>Data de Nascimento:</b></label>
+                <input type="date" name="data_nascimento" id="data_nascimento" required>
+                <br><br>
+
+                <div class="inputbox">
+                    <input type="text" autocomplete="off" maxlength="14" class="inputUser" required>
+                    <label for="cpf" class="labelInput"><b>CPF:</b></label>
+                    <!-- Conferir se o label do Cpf está ok. -->
+                </div>
+                <br><br>
+
+                <input type="submit" name="submit" id="submit">
+            </fieldset>
+        </form>
+    </div>
+</main>

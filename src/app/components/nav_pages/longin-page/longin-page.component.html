@@ -1,1 +1,19 @@
-<p>longin-page works!</p>
+<main>
+    <div class="container">
+        <section class="paciente">
+            <h2>Paciente</h2>
+            <a class="btn0" [routerLink]="['/login-paciente']">log in</a>
+        </section>
+        <br><br>
+
+        <section class="psicologo">
+            <h2>Psicólogo</h2>
+            <a class="btn" [routerLink]="['/login-psicologo']">log in</a>
+        </section>
+    </div>
+</main>
+
+<!--<a class="btn0" [routerLink]="['/login-paciente', paciente.id]" >Perfil Completo</a>
+<a class="btn0" [routerLink]="['/login-psicologo', psicologo.id]" >Perfil Completo</a>-->
+
+<!--<a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil Completo</a>-->

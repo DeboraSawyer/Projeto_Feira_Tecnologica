@@ -1,0 +1,619 @@
+/* Estilos globais */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    /*border: 3px solid red;*/
+    font-family: Arial, sans-serif;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f2f2f2;
+}
+
+.container {
+    /*border: 3px solid goldenrod;*/
+    /*background-image: linear-gradient(to right, #9CAAF6, #f0f0f0);*/
+    background-color: #dcd4e4;
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner {
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: #000;
+    padding: 4rem 0;
+    position: relative;
+}
+
+.banner h1,
+.banner .texto0,
+.banner .button {
+    /*border: 3px solid aquamarine;*/
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(10px);
+    /*background: rgba(156, 170, 246, 0.3);*/
+    border-radius: 10px;
+    padding: 10px;
+    z-index: 1;
+    color: #000;
+    white-space: nowrap;
+}
+
+.banner h1 {
+    top: 15%;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.banner .texto0 {
+    top: 89%;
+    /* Ajusta a posição vertical conforme necessário. */
+    font-size: 25px;
+    color: #113A76;
+    font-weight: bold;
+}
+
+.banner img {
+    width: auto;
+    height: 55vh;
+    object-fit: cover;
+    top: 10%;
+}
+
+.banner .button {
+    top: 98%;
+    /* Ajusta a posição vertical conforme necessário.*/
+    display: inline-block;
+    background-color: #629dc4;
+    color: #fff;
+    border: 3px solid #629dc4;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 10px 0;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.banner .button:hover {
+    color: #113A76;
+    background-color: #FFBC7E;
+    border: 3px solid #FFBC7E;
+    font-weight: bold;
+}
+
+
+
+/* SOBRE AOBEM. */
+.container0 {
+    background-color: #f2f2f2;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+}
+
+.sobre {
+    /*border: 3px solid red;*/
+    flex: 1;
+    padding: 20px;
+}
+
+.subt {
+    text-transform: uppercase;
+}
+
+.texto {
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.maos {
+    /*border: 3px solid yellow;*/
+    border: 1.16px solid #fff599;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 245, 153, 0.1);
+    border-radius: 50% 50% 20px;
+    flex: 1;
+    padding: 20px;
+    margin-left: 140px;
+}
+
+.maos img {
+    height: 50vh;
+}
+
+/* Estilo do cadastre-se. */
+.btn {
+    display: inline-block;
+    background-color: #113A76;
+    color: #fff;
+    border: 3px solid #113A76;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 20px 0;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    /* Animação de 0.3 segundos na propriedade de background. */
+    font-weight: bold;
+}
+
+.btn:hover {
+    /*background: linear-gradient(to right, #113A76, #FFF599);*/
+    transform: scale(1.1);
+    /* Aumenta em 10%. */
+    background-color: #d7ddfb;
+    color: #113A76;
+}
+
+
+.container1 {
+    /*border: 3px solid black;*/
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+}
+
+.chat {
+    border-radius: 90px 0 90px 0;
+    border: 1.16px solid rgba(156, 170, 246, 0.1);
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f4f4;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.1);
+    min-height: 500px;
+    /* Defina uma altura mínima desejada. */
+}
+
+.funciona {
+    border: 1px solid rgba(156, 170, 246, 0.1);
+    border-radius: 0 90px 0 90px;
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f4f4;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.1);
+    min-height: 500px;
+    /* Defina uma altura mínima desejada. */
+}
+
+.sub {
+    padding-top: 10px;
+    text-transform: uppercase;
+}
+
+.pessoas {
+    /*border: 3px solid grey;*/
+    backdrop-filter: blur(10px);
+    background: rgba(17, 58, 118, 0.1);
+    border-radius: 50% 80px;
+    flex: 1;
+    padding: 30px;
+    margin-left: 134px;
+    margin-right: 150px;
+}
+
+.pessoas img {
+    height: 20vh;
+    justify-content: center;
+}
+
+/* Bem-vindo usuário. */
+.container-usuario {
+    /*border: 1.16px solid #9caaf6;*/
+    background-color: #f2f2f2;
+    max-width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    height: 100vh;
+    border-radius: 20px 100% 0 0;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.3);
+}
+
+.usuario {
+    /*border: 3px solid green;*/
+    text-align: justify;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px;
+    text-transform: uppercase;
+    color: #113A76;
+}
+
+.sub-user {
+    /*border: 3px solid green;*/
+    text-align: justify;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 0px 25px;
+    text-transform: uppercase;
+    color: #113A76;
+}
+
+.texto-user {
+    padding: 5px 0 0 25px;
+    font-size: 20px;
+}
+
+.novo-usuario {
+    border: 1.16px solid #FFF599;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 245, 153, 0.5);
+    border-radius: 20px 20px 20px 100%;
+    flex: 1;
+    padding: 20px;
+    margin-left: 140px;
+}
+
+.novo-usuario img {
+    height: 50vh;
+}
+
+/* Conversar com Chatbot. */
+.container-usuario1 {
+    border: 1.16px solid #FFBC7E;
+    background-color: #f2f2f2;
+    max-width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px;
+    height: 50vh;
+    border-radius: 10% 50% 0 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 188, 126, 0.3);
+}
+
+
+.mbtn {
+    margin-left: 24px;
+}
+
+/* Estilo do triagem. */
+.button {
+    display: inline-block;
+    background-color: #113A76;
+    color: #fff;
+    border: 3px solid #113A76;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 20px 0;
+    /*margin-left: 30px;*/
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-5px);
+    /* Move o botão 5 pixels para cima ao passar o mouse. */
+}
+
+.texto_p {
+    padding-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Estilos do container. */
+.card-container {
+    /*border: 3px solid salmon;*/
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    /*20px*/
+    max-width: 1300px;
+    margin: 0 auto;
+    justify-content: space-between;
+    /* Espaço igual entre os cards */
+    height: 70vh;
+}
+
+/* Estilos dos cards. */
+.card {
+    border: 1.16px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    flex: 0 0 calc(33.33% - 20px);
+    /* 3 cards por linha com 20px de espaço entre eles */
+    margin: 10px;
+    /* Espaço entre os cards */
+    margin-top: 100px;
+    max-height: 400px;
+}
+
+/* Estilos das imagens dos psicólogos. */
+.card .profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: -50px auto 10px auto;
+    position: relative;
+}
+
+.card .profile-picture img {
+    width: 100%;
+    height: 100%;
+    border: 1.16px solid #ccc;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    border-radius: 50%;
+}
+
+/* Estilos do cabeçalho. */
+.card h3 {
+    margin-top: 35px;
+}
+
+/* Título do profissional. */
+.card .p {
+    font-size: 1.3rem;
+    margin-top: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card .cb {
+    display: inline-block;
+    background-color: #FFBC7E;
+    color: #113A76;
+    border: 3px solid #FFBC7E;
+    padding: 8px 16px;
+    border-radius: 30px;
+    margin: 3px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo dos textos dentro dos cards. */
+.card>.sbt {
+    margin: 20px 0 5px;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 5px 0;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+/* Estilo do Botão Ver Perfis. */
+.bt {
+    /*border: 3px solid yellow;*/
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    margin-bottom: 50px;
+}
+
+.btn1 {
+    display: inline-block;
+    background-color: #113A76;
+    color: #fff;
+    border: 3px solid #113A76;
+    padding: 8px 16px;
+    border-radius: 10px;
+    margin: 20px auto;
+    /* Centraliza o botão horizontalmente */
+    text-decoration: none;
+    transition: background 0.3s ease;
+    /* Animação de 0.3 segundos na propriedade de background. */
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: #fff;
+    color: #113A76;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+.container2 {
+    /*border: 3px solid black;*/
+    align-items: center;
+    padding: 20px 80px 20px 80px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 245, 153, 0.3);
+}
+
+.sub1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 188, 126, 0.3);
+    color: #113A76;
+    padding: 25px;
+}
+
+
+.faq-container {
+    max-width: 1300px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.faq-input {
+    display: none;
+}
+
+.faq-label {
+    display: block;
+    background-color: #9CAAF6;
+    /* Cor de fundo */
+    border-radius: 10px;
+    color: #fff;
+    /* Cor do texto */
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.faq-content {
+    display: none;
+    padding: 10px;
+    border: 3px solid #9CAAF6;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.2);
+    border-radius: 10px;
+    color: #113A76;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.faq-input:checked+.faq-label+.faq-content {
+    display: block;
+}
+
+
+.sub2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 245, 153, 0.3);
+    color: #113A76;
+    padding: 25px;
+}
+
+.card-container1 {
+    max-width: 1300px;
+    /* Define a largura máxima para o container de cards. */
+    margin: 0 auto;
+    /* Centralize o container horizontalmente. */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite que os cards sejam exibidos em várias linhas. */
+    justify-content: space-between;
+    /* Distribui os cards igualmente na largura. */
+    gap: 20px;
+    /* Espaço entre os cards. */
+}
+
+.card1 {
+    flex: 0 0 calc(33.33% - 20px);
+    /* Define a largura dos cards em um terço da largura disponível com o espaço entre eles. */
+    border: 1.16px solid rgba(156, 170, 246, 0.3);
+    border-radius: 20px;
+    box-shadow: 10px 20px 40px rgba(156, 170, 246, 0.3);
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.2);
+    padding: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    position: relative;
+}
+
+.texto1 {
+    text-align: justify;
+    margin: 0 100px;
+    /*200px*/
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: 500;
+    align-items: flex-start;
+    color: #113A76;
+}
+
+.user-image {
+    display: flex;
+    align-items: flex-end;
+}
+
+.user-image img {
+    width: 80px;
+    height: 80px;
+    box-shadow: 0 2px 4px rgba(156, 170, 246, 0.3);
+    border-radius: 50%;
+    border: 1.16px solid rgba(156, 170, 246, 0.7);
+    object-fit: cover;
+    margin: 5px;
+}
+
+.user-info {
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e o texto do usuário. */
+}
+
+.comentario {
+    flex: 1;
+    /* Ocupa o espaço restante, movendo o texto para o topo. */
+    font-size: 20px;
+}
+
+.card1::before {
+    content: "❝❞";
+    font-size: 36px;
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    color: #113A76;
+    z-index: 1;
+    box-shadow: 0 2px 4px rgba(156, 170, 246, 0.4);
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.7);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+
+
+
+
+
+.av {
+    background-color: #FFBC7E;
+    border: 3px solid #FFBC7E;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 0 50px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
+    /* Coloca o aviso na frente do footer. */
+}
+
+.aviso {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}

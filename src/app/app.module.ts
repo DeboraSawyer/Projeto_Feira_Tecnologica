@@ -14,6 +14,10 @@ import { LonginPageComponent } from './components/nav_pages/longin-page/longin-p
 import { CadastroPageComponent } from './components/nav_pages/cadastro-page/cadastro-page.component';
 import { TriagemPageComponent } from './components/nav_pages/triagem-page/triagem-page.component';
 import { PerfilPsicologoPageComponent } from './components/web_pages/perfil-psicologo-page/perfil-psicologo-page.component';
+import { CadastroPsicologoPageComponent } from './components/web_pages/cadastro-psicologo-page/cadastro-psicologo-page.component';
+import { CadastroPacientePageComponent } from './components/web_pages/cadastro-paciente-page/cadastro-paciente-page.component';
+import { LoginPacientePageComponent } from './components/web_pages/login-paciente-page/login-paciente-page.component';
+import { LoginPsicologoPageComponent } from './components/web_pages/login-psicologo-page/login-psicologo-page.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +32,15 @@ import { PerfilPsicologoPageComponent } from './components/web_pages/perfil-psic
     LonginPageComponent,
     CadastroPageComponent,
     TriagemPageComponent,
-    PerfilPsicologoPageComponent
+    PerfilPsicologoPageComponent,
+    CadastroPsicologoPageComponent,
+    CadastroPacientePageComponent,
+    LoginPacientePageComponent,
+    LoginPsicologoPageComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

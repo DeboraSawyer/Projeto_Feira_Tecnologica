@@ -1,1 +1,326 @@
-<p>home-page works!</p>
+<body>
+    <div class="container">
+        <section class="banner">
+            <img src="assets/imagens/terapia_online.png" alt="Terapia Online">
+            <h1>Encontre Apoio Emocional</h1>
+            <p class="texto0">A terapia online oferece suporte quando você mais precisa. Comece hoje!</p>
+            <a href="home/#por_que_terapia" class="button" target="_self">Saiba Mais</a>
+        </section>
+    </div>
+
+    <!-- Sobre o AOBEM. -->
+    <div id="quem_somos" class="container0">
+        <section class="sobre">
+            <h2 class="subt">Sobre o AO BEM</h2>
+            <p class="texto">Oferecemos para você uma rede de suporte online com psicólogos de todo Brasil, totalmente
+                gratuito por 3
+                sessões!
+                Cadastre-se já e seja atendido.</p>
+            <a class="ancora nav-link btn" [routerLink]="['/cadastrar']" routerLinkActive="active">Cadastre-se</a>
+        </section>
+
+        <!-- Maõs. -->
+        <section class="maos">
+            <img src="/assets/imagens/maos.png" alt="maos">
+        </section>
+    </div>
+
+    <!-- Como funciona. -->
+    <div id="como_funciona" class="container1">
+        <aside class="funciona">
+            <h3 class="sub">Mas como funciona?</h3>
+            <ol>
+                <li class="texto">Você conversa com o nosso chatbot para entendermos seu caso para recomendar os
+                    psicólogos que melhor te
+                    atende.</li>
+                <li class="texto">Disponibilizaremos diversos profissionais que melhor te atende para você iniciar sua
+                    sessão gratuita.
+                </li>
+                <li class="texto">Após as 3 sessões gratuitas, será disponibilizado os contatos dos profissionais e
+                    valores do seu
+                    psicólogo escolhido para caso você continuar seu atendimento, caso contrario, você poderá continuar
+                    buscando profissionais até achar um perfeito para você!</li>
+            </ol>
+        </aside>
+
+        <!-- Chatbot. -->
+        <aside class="chat">
+            <h3 class="sub">CHATBOT?</h3>
+            <p class="texto">Utilizamos a Inteligencia Artificial para gerenciar suas informações, identificar melhor
+                suas questões, armazenar suas informações, procurar o melhor psicólogo para você e transmitir suas
+                informações para o mesmo, simplificando assim o trabalho.</p>
+
+            <div class="pessoas">
+                <img src="/assets/imagens/pessoas.png" alt="pessoas">
+            </div>
+        </aside>
+    </div>
+
+    <!-- Bem-vindo usuário. -->
+    <div class="container-usuario">
+        <section class="sobre">
+            <h3 class="usuario">Bem-vindo!</h3>
+            <h4 class="sub-user">Usuário</h4>
+            <p class="texto-user">Nossa plataforma tem como o objetivo democratizar o acesso ao tratamento psicológico.
+            </p>
+            <br><br>
+
+            <!-- Conversar com Chatbot. -->
+            <h4 class="sub-user">Conversar com Chatbot</h4>
+            <p class="texto-user">Para realizar o checkin e analisar suas caracteriscas para achar o melhor psicólogo.
+            </p>
+            <div class="mbtn">
+                <a class="ancora nav-link button" [routerLink]="['/triagem']" routerLinkActive="active">Triagem</a>
+            </div>
+        </section>
+
+        <!-- Usuário. -->
+        <section class="novo-usuario">
+            <img src="/assets/imagens/usuario.png" alt="usuário">
+        </section>
+    </div>
+
+    <!-- Psicologos. -->
+    <h3 class="sub1">Conheça nossos psicólogos</h3>
+    <section class="container2">
+        <p class="texto_p">Encontre o melhor psicologo que supra suas necessidades.</p>
+    </section>
+
+    <section class="card-container">
+
+        <!-- Psicologos. -->
+        <!-- Perfil 1. -->
+        <div class="card">
+            <div class="profile-picture">
+                <img src="/assets/imagens/ana_p.png" alt="psicóloga Ana Albani">
+            </div>
+            <h3>Ana Albani</h3>
+            <p class="p">Psicóloga Clínica</p>
+
+            <!--<p class="sbt">Especializações:</p>
+            <p class="cb">Terapia Cognitivo-Comportamental</p>
+            <p class="cb">Depressão</p>
+            <p class="cb">Transtornos de Ansiedade</p>-->
+
+            <p class="sbt">Abordagem Terapêutica:</p>
+            <p>Minha abordagem terapêutica é baseada em evidências e se concentra na terapia cognitivo-comportamental.
+                Minha missão é ajudar meus pacientes a desenvolver habilidades para lidar com o estresse e aprimorar seu
+                bem-estar emocional.</p>
+
+            <!--<p class="sbt">Biografia:</p>
+            <p>Sou uma psicóloga clínica com mais de 10 anos de experiência no tratamento de transtornos de ansiedade e
+                depressão.</p>-->
+        </div>
+
+        <!-- Perfil 2. -->
+        <div class="card">
+            <div class="profile-picture">
+                <img src="/assets/imagens/takeshi_p.png" alt="psicóloga Ana Albani">
+            </div>
+            <h3>Takeshi Taddini</h3>
+            <p class="p">Psicólogo do Esporte</p>
+
+            <!--<p class="sbt">Especializações:</p>
+            <p class="cb">Desempenho de Atletas</p>
+            <p class="cb">Gestão de Pressão Competitiva</p>
+            <p class="cb">Bem-Estar Mental no Esporte</p>-->
+
+            <p class="sbt">Abordagem Terapêutica:</p>
+            <p>Minha abordagem terapêutica visa melhorar o desempenho esportivo, ajudando atletas a lidar com pressão e
+                estresse. Trabalho para otimizar o equilíbrio entre mente e corpo.</p>
+
+            <!--<p class="sbt">Biografia:</p>
+            <p>Trabalho com atletas de alto rendimento, auxiliando-os a alcançar seu potencial máximo.</p>-->
+        </div>
+
+        <!-- Perfil 3. -->
+        <div class="card">
+            <div class="profile-picture">
+                <img src="assets/imagens/veronika_p.png" alt="psicóloga Ana Albani">
+            </div>
+            <h3>Veronika Vogel</h3>
+            <p class="p">Psicóloga Jurídica</p>
+
+            <!--<p class="sbt">Especializações:</p>
+            <p class="cb">Avaliação Psicológica em Processos Legais</p>
+            <p class="cb">Mediação de Conflitos</p>
+            <p class="cb">Apoio a Vítimas de Crimes</p>-->
+
+            <p class="sbt">Abordagem Terapêutica:</p>
+            <p>Minha abordagem terapêutica está centrada na justiça, ajudando indivíduos envolvidos em processos legais
+                a lidar com o estresse e tomar decisões informadas. Trabalho para promover a resolução pacífica de
+                conflitos.</p>
+
+            <!--<p class="sbt">Biografia:</p>
+            <p>Atuo como psicóloga jurídica há mais de 10 anos, oferecendo suporte a clientes envolvidos em questões
+                legais</p>-->
+        </div>
+    </section>
+
+    <!-- Botão Ver Perfis. -->
+    <section class="bt">
+        <a class="ancora nav-link btn1" [routerLink]="['/perfis']" routerLinkActive="active">Ver Perfis</a>
+    </section>
+
+    <!-- Terapia? -->
+    <h3 class="sub1">Por que fazer terapia?</h3>
+    <section class="container2">
+        <p class="texto">Geralmente, ouvimos por ai que terapia é coisa de doido, mas vamos te mostrar que não é bem
+            assim, veja alguns motivos pelos quais você pode iniciar um acompanhamento psicológico: </p>
+    </section>
+
+    <!-- Lista de Motivos. -->
+    <section id="por_que_terapia">
+        <div class="faq-container">
+            <!-- 1º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq1" class="faq-input">
+                <label for="faq1" class="faq-label">Motivo número 1.</label>
+                <p class="faq-content">Problemas de Saúde Mental: Muitas pessoas procuram terapia para tratar condições
+                    de saúde mental, como depressão, ansiedade, transtorno bipolar, transtorno de estresse
+                    pós-traumático (TEPT), entre outros. A terapia pode ajudar a entender, gerenciar e superar esses
+                    desafios.</p>
+            </div><br>
+
+            <!-- 2º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq2" class="faq-input">
+                <label for="faq2" class="faq-label">Motivo número 2.</label>
+                <p class="faq-content">Stress e Pressão: A vida moderna frequentemente traz altos níveis de estresse e
+                    pressão. Terapia pode ser um espaço seguro para aprender a lidar com o estresse, desenvolver
+                    habilidades de enfrentamento e evitar o esgotamento.</p>
+            </div><br>
+
+            <!-- 3º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq3" class="faq-input">
+                <label for="faq3" class="faq-label">Motivo número 3.</label>
+                <p class="faq-content">Problemas de Relacionamento: Terapia de casal ou terapia familiar é
+                    frequentemente usada para melhorar os relacionamentos interpessoais. Isso pode incluir casais com
+                    dificuldades de comunicação, famílias com conflitos persistentes, etc.</p>
+            </div><br>
+
+            <!-- 4º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq4" class="faq-input">
+                <label for="faq4" class="faq-label">Motivo número 4.</label>
+                <p class="faq-content">Autoconhecimento e Crescimento Pessoal: Algumas pessoas buscam terapia para se
+                    conhecer melhor, explorar seus objetivos de vida e trabalhar em seu desenvolvimento pessoal. A
+                    terapia pode ser um espaço para reflexão e crescimento.</p>
+            </div><br>
+
+            <!-- 5º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq5" class="faq-input">
+                <label for="faq5" class="faq-label">Motivo número 5.</label>
+                <p class="faq-content">Trauma e Eventos de Vida Difíceis: Traumas passados ou eventos de vida difíceis,
+                    como perda de um ente querido, divórcio, abuso, etc., podem afetar profundamente a saúde mental. A
+                    terapia pode ajudar a processar essas experiências.</p>
+            </div><br>
+
+            <!-- 6º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq6" class="faq-input">
+                <label for="faq6" class="faq-label">Motivo número 6.</label>
+                <p class="faq-content">Vícios e Comportamentos Destrutivos: Pessoas que lutam com vícios, como
+                    alcoolismo, dependência de drogas, ou comportamentos autodestrutivos, podem buscar ajuda na terapia
+                    para superar essas questões.</p>
+            </div><br>
+
+            <!-- 7º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq7" class="faq-input">
+                <label for="faq7" class="faq-label">Motivo número 7.</label>
+                <p class="faq-content">Melhorias no Bem-Estar Geral: Terapia não é apenas para problemas graves de saúde
+                    mental. Algumas pessoas buscam terapia como parte de seu cuidado geral com a saúde mental, visando
+                    melhorar seu bem-estar emocional e psicológico.</p>
+            </div><br>
+
+            <!-- 8º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq8" class="faq-input">
+                <label for="faq8" class="faq-label">Motivo número 8.</label>
+                <p class="faq-content">
+                    Aprendizado de Habilidades de Enfrentamento: Terapeutas podem ensinar habilidades práticas para
+                    lidar com desafios da vida, melhorar a resiliência emocional e promover uma melhor qualidade de
+                    vida.</p>
+            </div><br>
+
+            <!-- 9º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq9" class="faq-input">
+                <label for="faq9" class="faq-label">Motivo número 9.</label>
+                <p class="faq-content">Prevenção de Problemas Futuros: A terapia preventiva pode ajudar as pessoas a
+                    desenvolver habilidades de enfrentamento antes que os problemas se agravem, prevenindo assim futuros
+                    desafios de saúde mental.</p>
+            </div><br>
+
+            <!-- 10º Motivo. -->
+            <div class="faq-item">
+                <input type="checkbox" id="faq10" class="faq-input">
+                <label for="faq10" class="faq-label">Motivo número 10.</label>
+                <p class="faq-content">Melhoria da Autoestima e Confiança: Terapia pode ajudar as pessoas a desenvolver
+                    uma autoimagem mais positiva, aumentar a autoestima e construir confiança em si mesmas. Isso é
+                    especialmente benéfico para aqueles que lutam com sentimentos de desvalorização ou insegurança. Ter
+                    um espaço para explorar essas questões com um terapeuta pode levar a uma maior autoaceitação e
+                    autoconfiança.</p>
+            </div><br>
+        </div>
+    </section>
+
+
+    <h3 class="sub2">Comentários</h3>
+
+    <!-- Comentário. -->
+    <section class="container0">
+        <div class="card-container1 cont">
+
+            <!-- 1º comentário. -->
+            <div class="card1">
+                <div class="user-image">
+                    <img src="assets/imagens/user.png" alt="Usuário 04750">
+                </div>
+                <div class="user-info">
+                    <p class="texto1">Usuário: 04750</p>
+                </div>
+                <p class="comentario">A Dra. Ana é incrível! Ela me ajudou a superar minha ansiedade de uma forma que eu
+                    nunca pensei ser possível.</p>
+            </div>
+
+            <!-- 2º comentário. -->
+            <div class="card1">
+                <div class="user-image">
+                    <img src="assets/imagens/user.png" alt="Usuário 87654">
+                </div>
+                <div class="user-info">
+                    <p class="texto1">Usuário: 87654</p>
+                </div>
+                <p class="comentario">O tratamento com o Dr. Taddini melhorou significativamente meu desempenho no
+                    esporte. Ele é incrível!</p>
+            </div>
+
+            <!-- 3º comentário. -->
+            <div class="card1">
+                <div class="user-image">
+                    <img src="assets/imagens/user.png" alt="Usuário 70234">
+                </div>
+                <div class="user-info">
+                    <p class="texto1">Usuário: 70234</p>
+                </div>
+                <p class="comentario">Estou extremamente grato pela orientação da Dra. Vogel em um momento tão
+                    desafiador.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aviso. -->
+    <section class="av">
+        <div class="aviso">
+            <p>Atenção: Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida.
+                Em caso de crise, ligue para 188 (CVV) ou acesse o site www.cvv.org.br. Em caso de emergência,
+                procure atendimento em um hospital mais próximo.
+            <p>
+        </div>
+    </section>
+
+</body>

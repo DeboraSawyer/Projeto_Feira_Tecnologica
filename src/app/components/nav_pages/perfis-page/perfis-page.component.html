@@ -21,10 +21,10 @@
     </section>
 
     <!-- Barra de busca. -->
-    <section class="search-container">
+    <!--<section class="search-container">-->
 
         <!-- Procure por Especialidade. -->
-        <div class="search-category">
+        <!--<div class="search-category">
             <select id="specialty">
                 <option value="all" disabled selected>Escolha uma especialidade</option>
                 <option class="opcoes" value="psicologia_clinica">Psicologia Clínica</option>
@@ -45,10 +45,10 @@
                 <option value="psicologia_consumidor">Psicologia do Consumidor</option>
                 <option value="psicologia_transcultural">Psicologia Transcultural</option>
             </select>
-        </div>
+        </div>-->
 
         <!-- Procure por Abordagem. -->
-        <div class="search-category">
+        <!--<div class="search-category">
             <select id="approaches">
                 <option value="all" disabled selected>Escolha uma abordagem</option>
                 <option value="Abordagem_psicanalitica">Abordagem Psicanalítica</option>
@@ -68,16 +68,16 @@
                 <option value="Abordagem_construtivista">Abordagem Construtivista</option>
                 <option value="Abordagem_integral">Abordagem Integral</option>
             </select>
-        </div>
+        </div>-->
 
         <!-- Procure por nome. -->
-        <div class="search-category">
+        <!--<div class="search-category">
             <input type="text" id="name" placeholder="Digite o nome do profissional...">
-        </div>
+        </div>-->
 
         <!-- Botão de procura. -->
-        <button id="search-button">Procurar</button>
-    </section>
+        <!--<button id="search-button">Procurar</button>
+    </section>-->
 
     <!-- Resultado. -->
     <div id="search-results"></div>
@@ -112,10 +112,10 @@
             <p>{{ perfil.biografia }}</p>
 
             <!-- Botão Perfil completo. -->
-            <a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil completo</a>
+            <a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil Completo</a>
 
             <!-- Botão Marcar consulta. -->
-            <a class="btn" [routerLink]="['/login']" >Marcar consulta</a>
+            <a class="btn" [routerLink]="['/login']" >Marcar Consulta</a>
         </div>
     </section>
 

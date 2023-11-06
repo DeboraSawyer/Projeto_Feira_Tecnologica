@@ -1,11 +1,11 @@
 main {
-    border: 3px solid red;
+    /*border: 3px solid red;*/
 }
 
 /* ANIMAÇÃO DO TEXTO. */
 
 .box {
-    border: 3px solid rgb(0, 238, 255);
+    /*border: 3px solid rgb(0, 238, 255);*/
     height: 380px;
     display: grid;
     place-items: center;
@@ -79,9 +79,9 @@ span {
 /* BARRAS DE PROCURA. */
 
 .search-container {
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
     text-align: center;
-    background: rgba(255, 188, 126, 0.1);
+    background: rgba(255, 188, 126, 0.3);
     /* Esta é a cor em hex #FFBC7E; Laranja. */
     backdrop-filter: blur(10px);
     padding: 20px;
@@ -120,6 +120,7 @@ span {
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s;
+    font-weight: bold;
 }
 
 #search-button:hover {
@@ -137,12 +138,13 @@ span {
 
 .tituloPerfis {
     justify-content: center;
-    border: 3px solid blueviolet;
+    /*border: 3px solid blueviolet;*/
     display: flex;
     text-transform: uppercase;
     padding: 20px 20px;
     backdrop-filter: blur(10px);
-    background: rgba(255, 245, 153, 0.1);
+    /*background: rgba(255, 245, 153, 0.1);*/
+    background: rgba(255, 245, 153, 0.3);
     /* Esta é a cor em hex #FF599; Amarelo. */
     font-size: 16px;
     color: #113A76;
@@ -153,7 +155,7 @@ span {
 
 /* Estilos do container. */
 .card-container {
-    border: 3px solid aqua;
+    /*border: 3px solid aqua;*/
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
@@ -261,6 +263,7 @@ span {
     border-radius: 10px;
     margin: 30px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /* Estilo do botão Marcar consulta. */
@@ -275,6 +278,7 @@ span {
     text-decoration: none;
     transition: background 0.3s ease;
     /* Animação de 0.3 segundos na propriedade de background. */
+    font-weight: bold;
 }
 
 .btn0:hover {
@@ -287,7 +291,7 @@ span {
 
 /* Estilo do botão Ver mais. */
 .hibrido {
-    border: 3px solid yellow;
+    /*border: 3px solid yellow;*/
     padding-bottom: 30px;
     max-width: 1300px;
     /* Define uma largura máxima para o contêiner. */
@@ -310,6 +314,7 @@ span {
     text-decoration: none;
     cursor: pointer;
     transition: background 0.3s ease;
+    font-weight: bold;
 }
 
 .ver-mais:hover {

@@ -1,44 +1,106 @@
 <main>
-    <!-- Card. -->
-    <section class="card-container">
-        <!-- Perfis. -->
-        <div class="card">
-            <div class="profile-picture">
-                <img [src]="psicologo.imagem_src" alt="{{ psicologo.nome }}">
+    <!-- Apresentação. -->
+    <section class="sec-1">
+        <img [src]="psicologo.imagem_src" alt="{{ psicologo.nome }}">
+        <h1> Olá, eu sou {{ psicologo.nome }}!</h1>
+        <h2>{{ psicologo.especialidade }}</h2>
+    </section>
+
+    <!-- Temas. -->
+    <section class="sec-2">
+        <h3>Temas que trabalho</h3>
+        <ul>
+            <li class="animate cb">{{ psicologo.especializacao1 }}</li>
+            <li class="animate cb">{{ psicologo.especializacao2 }}</li>
+            <li class="animate cb">{{ psicologo.especializacao3 }}</li>
+        </ul>
+    </section>
+
+    <!-- Abordagem. -->
+    <section class="sec-3">
+        <h3>Abordagem</h3>
+        <p class="texto">{{ psicologo.abordagem }}</p>
+    </section>
+
+    <!-- Bigrafia. -->
+    <section class="sec-4">
+        <h3>Biografia</h3>
+        <p class="texto">{{ psicologo.biografia }}</p>
+    </section>
+
+    <!-- Qualificações. -->
+    <section class="sec-5">
+        <h3>Qualificação</h3>
+        <h4>Formação Acadêmica</h4>
+        <ul>
+            <li class="texto">{{ psicologo.formacao1 }}</li>
+            <li class="texto">{{ psicologo.formacao2 }}</li>
+        </ul>
+        <h4>Experiência Profissional</h4>
+        <ul>
+            <li class="texto">{{ psicologo.experiencia1 }}</li>
+            <li class="texto">{{ psicologo.experiencia2 }}</li>
+            <li class="texto">{{ psicologo.experiencia3 }}</li>
+        </ul>
+        <h4>Atividades Adicionais</h4>
+        <ul>
+            <li class="texto">{{ psicologo.atividade1 }}</li>
+            <li class="texto">{{ psicologo.atividade2 }}</li>
+            <li class="texto">{{ psicologo.atividade3 }}</li>
+        </ul>
+    </section>
+
+
+     <!-- Comentário. -->
+     <section class="sec-6">
+        <h3>Comentários</h3>
+        <div class="card-container">
+
+            <!-- 1º comentário. -->
+            <div class="card">
+                <div class="user-image">
+                    <img [src]="psicologo.imagem_user1" alt="{{psicologo.usuario1}}">
+                </div>
+                <div class="user-info">
+                    <p class="texto">Usuário: {{ psicologo. usuario1}}</p>
+                </div>
+                <p class="comentario">{{ psicologo. comentario1}}</p>
             </div>
 
-            <h3>{{ psicologo.nome }}</h3>
-            <p class="p">{{ psicologo.especialidade }}</p>
+            <!-- 2º comentário. -->
+            <div class="card">
+                <div class="user-image">
+                    <img [src]="psicologo.imagem_user2" alt="{{psicologo.usuario2}}">
+                </div>
+                <div class="user-info">
+                    <p class="texto">Usuário: {{ psicologo. usuario2}}</p>
+                </div>
+                <p class="comentario">{{ psicologo. comentario2}}</p>
+            </div>
 
-            <p class="sbt">Temas que trabalho:</p>
-            <p class="cb">{{ psicologo.especializacao1 }}</p>
-            <p class="cb">{{ psicologo.especializacao2 }}</p>
-            <p class="cb">{{ psicologo.especializacao3 }}</p>
+            <!-- 3º comentário. -->
+            <div class="card">
+                <div class="user-image">
+                    <img [src]="psicologo.imagem_user3" alt="{{psicologo.usuario3}}">
+                </div>
+                <div class="user-info">
+                    <p class="texto">Usuário: {{ psicologo. usuario3}}</p>
+                </div>
+                <p class="comentario">{{ psicologo. comentario3}}</p>
+            </div>
+        </div>
+    </section>
+   
 
-            <p class="sbt">Abordagem:</p>
-            <p>{{ psicologo.abordagem }}</p>
-
-            <p class="sbt">Biografia:</p>
-            <p>{{ psicologo.biografia }}</p>
-
-            <p class="sbt">Qualificação:</p>
-            <p class="sbt">Formação Acadêmica</p>
-            <p>{{ psicologo.formacao1 }}</p>
-            <p>{{ psicologo.formacao2 }}</p>
-
-            <p class="sbt">Experiência Profissional</p>
-            <p>{{ psicologo.experiencia1 }}</p>
-            <p>{{ psicologo.experiencia2 }}</p>
-            <p>{{ psicologo.experiencia3 }}</p>
-
-            <p class="sbt">Atividades Adicionais</p>
-            <p>{{ psicologo.atividade1 }}</p>
-            <p>{{ psicologo.atividade2 }}</p>
-            <p>{{ psicologo.atividade3 }}</p>
-
-            <p class="sbt">Contatos:</p>
-            <p>{{ psicologo.email }}</p>
-            <p>{{ psicologo.telefone }}</p>
+    <!-- Contatos. -->
+    <section class="sec-7">
+        <h3>Contatos</h3>
+        <p class="texto1">E-mail: {{ psicologo.email }}</p>
+        <p class="texto1">Telefone: {{ psicologo.telefone }}</p>
+        <!-- Botões. -->
+        <div class="botao">
+            <p><a class="btn0" [routerLink]="['/perfis']">Voltar para Perfis</a></p>
+            <p><a class="btn" [routerLink]="['/login']">Marcar Consulta</a></p>
         </div>
     </section>
 </main>

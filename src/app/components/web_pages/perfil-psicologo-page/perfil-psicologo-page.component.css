@@ -1,7 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 * {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(to right, #9CAAF6, #113A76);
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+.sec-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+  background: rgba(156, 170, 246, 0.7);
+  overflow-x: hidden;
+}
+
+.sec-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFF599;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 245, 153, 0.7);
+  overflow-x: hidden;
+}
+
+.sec-4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 188, 126, 0.7);
+  overflow-x: hidden;
+}
+
+.sec-5 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+  background: rgba(156, 170, 246, 0.7);
+  overflow-x: hidden;
+}
+
+.sec-6 {
+  display: flex;
+  justify-content: center;  
+  flex-direction: column;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 245, 153, 0.7);
+  overflow-x: hidden;
+}
+
+.sec-7 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 188, 126, 0.7);
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 60px; /*90px*/
+  color: #fff;
+  text-align: center;
+  
+  /* Se ficar ruim, apague. */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  /*background: rgba(156, 170, 246, 0.3);*/
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1;
+  margin-top: 430px;
+}
+
+h2 {
+  font-size: 40px; /*60px*/
+  color: aqua;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(10px);
+  /*background: rgba(156, 170, 246, 0.3);*/
+  border-radius: 10px;
+  padding: 10px;
+  z-index: 1;
+  margin-top: 591px;
+
+}
+
+h3 {
+  font-size: 30px;
+  color: #000;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 25px;/*20px*/
+  color: snow;
+  text-align: justify;
+  margin: 20px 100px 10px 100px;
+}
+
+.cb {
+  display: inline-block;
+  background-color: #FFBC7E;
+  color: #113A76;
+  border: 3px solid #FFBC7E;
+  padding: 4px 16px;
+  border-radius: 30px;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.texto {
+  text-align: justify;
+  margin: 0 100px; /*200px*/
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 500;
+  align-items:flex-start;
+  color: #113A76;
+}
+
+.texto1 {
+  text-align: center;
+  margin: 0 100px; /*200px*/
+  font-weight: bold;
+  font-size: 20px;
+  font-weight: 500;
+  align-items:flex-start;
+  color: #113A76;
+  padding-bottom: -300px;
+}
+
+ul, li {
+  text-align: center;
+  list-style: none; 
+  color: #000;
+}
+
+
+
+.card-container {
+  max-width: 1300px; /* Define a largura máxima para o container de cards. */
+  margin: 0 auto; /* Centralize o container horizontalmente. */
+  display: flex;
+  flex-wrap: wrap; /* Permite que os cards sejam exibidos em várias linhas. */
+  justify-content: space-between; /* Distribui os cards igualmente na largura. */
+  gap: 20px; /* Espaço entre os cards. */
+}
+
+.card {
+  flex: 0 0 calc(33.33% - 20px); /* Define a largura dos cards em um terço da largura disponível com o espaço entre eles. */
+  border: 1.16px solid rgba(156, 170, 246, 0.3);
+  border-radius: 20px;
+  box-shadow: 10px 20px 40px rgba(156, 170, 246, 0.3);
+  backdrop-filter: blur(10px);
+  background: rgba(156, 170, 246, 0.2);
+  padding: 20px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  min-height: 250px;
+  position: relative;
+}
+
+.user-image {
+  display: flex;
+  align-items: flex-end;
+}
+
+.user-image img {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0 2px 4px rgba(156, 170, 246, 0.3);
+  border-radius: 50%;
+  border: 1.16px solid rgba(156, 170, 246, 0.7);
+  object-fit: cover;
+  margin: 5px;
+}
+
+.user-info {
+  margin-bottom: 10px; /* Espaço entre a imagem e o texto do usuário. */
+}
+
+.comentario {
+  flex: 1; /* Ocupa o espaço restante, movendo o texto para o topo. */
+  font-size: 20px;
+}
+
+.card::before {
+  content: "❝❞";
+  font-size: 36px;
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  color: #113A76;
+  z-index: 1;
+  box-shadow: 0 2px 4px rgba(156, 170, 246, 0.1);
+  backdrop-filter: blur(10px);
+  background: rgba(156, 170, 246, 0.7);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+
+
+
+
+
+.botao {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Isso alinhará os botões um ao lado do outro com espaço entre eles */
+  padding: 250px 0;
+  font-size: 16px;
+}
+
+/* Estilo do botão Voltar. */
+.btn0 {
+  background-color: #fff;
+  color: #000;
+  border: 3px solid #113A76;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilo do botão Marcar consulta. */
+.btn {
+  background-color: #113A76;
+  color: #fff;
+  border: 3px solid #113A76;
+  padding: 8px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  /* Animação de 0.3 segundos na propriedade de background. */
+  font-weight: bold;
+}
+
+.btn0:hover {
+  background: linear-gradient(to right, #fff, #FFF599);
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #113A76, #FFBC7E);
+}

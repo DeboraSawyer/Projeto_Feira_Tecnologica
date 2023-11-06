@@ -33,7 +33,7 @@ export class PerfisPsicologosService {
       nome: 'Veronika Vogel',
       imagem_src: 'assets/imagens/veronika_p.png',
       especialidade: 'Psicóloga Jurídica',
-      especializacao1: 'valiação Psicológica em Processos Legais',
+      especializacao1: 'Avaliação Psicológica em Processos Legais',
       especializacao2: 'Mediação de Conflitos',
       especializacao3: 'Apoio a Vítimas de Crimes',
       abordagem: 'Minha abordagem terapêutica está centrada na justiça, ajudando indivíduos envolvidos em processos legais a lidar com o estresse e tomar decisões informadas. Trabalho para promover a resolução pacífica de conflitos.',
