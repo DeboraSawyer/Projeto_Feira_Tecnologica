@@ -62,3 +62,71 @@ export class PerfisPageComponent implements OnInit {
     }
   }
 }
+
+/* SEVIÇO COM O BANCO. */
+/*import { Component, OnInit } from '@angular/core';
+import { PerfisPsicologosService } from 'src/app/services/perfis_page/perfis-psicologos.service';
+import { ActivatedRoute } from '@angular/router';
+
+@Component({
+  selector: 'app-perfis-page',
+  templateUrl: './perfis-page.component.html',
+  styleUrls: ['./perfis-page.component.css']
+})
+
+export class PerfisPageComponent implements OnInit {
+  perfis: any[] = []; // Lista de todos os perfis.
+  perfisVisiveis: any[] = []; // Lista para armazenar os Perfis visíveis.
+  mostrarMais: boolean = false;
+  botaoLabel: string = 'Ver Mais';
+
+  constructor(
+    private perfisService: PerfisPsicologosService,
+    private route: ActivatedRoute
+  ) { }
+
+  ngOnInit() {
+    this.carregarPerfisDoServidor();
+  }
+
+  carregarPerfisDoServidor() {
+    this.perfisService.obterPerfisDoServidor().subscribe(data => {
+      this.perfis = data;
+    });
+  }
+
+  adicionarPerfil() {
+    const novoPerfil = { nome: 'Nome do Novo Perfil', especialidade: 'Especialidade do Novo Perfil' };
+    this.perfisService.adicionarPerfilNoServidor(novoPerfil).subscribe(() => {
+      this.carregarPerfisDoServidor();
+    });
+  }
+
+  atualizarPerfil(id: string, perfilAtualizado: any) {
+    this.perfisService.atualizarPerfilNoServidor(id, perfilAtualizado).subscribe(() => {
+      this.carregarPerfisDoServidor();
+    });
+  }
+
+  excluirPerfil(id: string) {
+    this.perfisService.excluirPerfilDoServidor(id).subscribe(() => {
+      this.carregarPerfisDoServidor();
+    });
+  }
+
+  toggleMostrarMais() {
+    this.mostrarMais = !this.mostrarMais;
+    this.botaoLabel = this.mostrarMais ? 'Voltar' : 'Ver Mais';
+    this.atualizarPerfisVisiveis(); // Atualiza a lista de perfis visíveis.
+  }
+
+  atualizarPerfisVisiveis() {
+    if (this.mostrarMais) {
+      // Exibe todos os perfis.
+      this.perfisVisiveis = this.perfis;
+    } else {
+      // Exibe os 6 primeiros perfis.
+      this.perfisVisiveis = this.perfis.slice(0, 6);
+    }
+  }
+}*/

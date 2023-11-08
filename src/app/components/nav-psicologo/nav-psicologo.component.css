@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+.container_fixo, .container {
+    display: flex;
+}
+
+.menu_fixo {
+    position: fixed;
+    width: 150px;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.3);
+    color: #fff;
+    padding: 20px;
+    height: 100vh;
+    z-index: 2;
+}
+
+.menu {
+    position: fixed;
+    width: 30px;
+    backdrop-filter: blur(10px);
+    background: rgba(156, 170, 246, 0.3);
+    color: #fff;
+    padding: 170px 150px 0 180px;
+    height: 100vh;
+    transition: transform 0.4s; /* Adicione uma transição para suavizar a animação */
+    transform: translateX(0); /* Inicialmente, o menu está visível */
+    z-index: 1;
+    text-align: left;
+}
+
+.menu.closed {
+    transform: translateX(-330px);
+  }
+
+.menu_fixo ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.menu_fixo li {
+    margin-left: 0 auto;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu li {
+    margin-left: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+
+.menu a:hover {
+    color: #113A76;
+    /*border-bottom: 3px solid #FFF599;*/
+}
+
+/* Link ativado. */
+.nav-link.active {
+    color: #113A76;
+    border-bottom: 3px solid #FFF599;
+}
+
+/* Estilo do logo. */
+.logo img {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.icons {
+    display: flex;
+    width: 50px;
+    height: 50px;
+}
+
+

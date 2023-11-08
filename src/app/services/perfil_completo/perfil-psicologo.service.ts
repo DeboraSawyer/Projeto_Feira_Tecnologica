@@ -373,3 +373,43 @@ export class PerfilPsicologoService {
     return this.psicologosCompletos[id];
   }
 }
+
+// Com o banco da dados.
+/*import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class PerfilPsicologoService {
+  private apiUrl = 'http://localhost:3000'; // URL do servidor Node.js.
+
+  constructor(private http: HttpClient) { }
+
+    // Buscar perfis do banco de dados.
+    obterPerfisDoBanco(): Observable<any[]> {
+      return this.http.get<any[]>(`${this.baseUrl}/perfis`);
+    }
+  
+    // Buscar informações detalhadas de um perfil com base no ID.
+    obterInformacoesDoBanco(id: string): Observable<any> {
+      return this.http.get<any>(`${this.baseUrl}/perfil/${id}`);
+    }
+  
+    // Adicionar um novo perfil ao banco de dados.
+    adicionarPerfilNoBanco(novoPerfil: any): Observable<any> {
+      return this.http.post<any>(`${this.baseUrl}/perfis`, novoPerfil);
+    }
+  
+    // Atualizar as informações de um perfil no banco de dados.
+    atualizarPerfilNoBanco(id: string, perfilAtualizado: any): Observable<any> {
+      return this.http.put<any>(`${this.baseUrl}/perfil/${id}`, perfilAtualizado);
+    }
+  
+    // Excluir um perfil do banco de dados.
+    excluirPerfilDoBanco(id: string): Observable<any> {
+      return this.http.delete<any>(`${this.baseUrl}/perfil/${id}`);
+    }
+  }  
+}*/

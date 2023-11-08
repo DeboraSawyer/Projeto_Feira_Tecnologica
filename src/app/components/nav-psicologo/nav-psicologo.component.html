@@ -1,0 +1,70 @@
+<body *ngIf="shouldShowMenuLateral()">
+
+    <div class="container_fixo">
+
+        <div class="menu_fixo">
+
+            <!-- Logo. -->
+            <div class="logo">
+                <img src="assets/imagens/logo-aobem.png" alt="Logo AOBEM">
+            </div>
+            
+            <ul>
+                <li>
+                    <button (click)="toggleMenu()">Abri menu</button>
+                </li>
+                
+                <!-- Home. -->
+                <li>
+                    <img class="icons" src="assets/imagens/home.png" alt="home">
+                </li>
+
+                <!-- Perfil. -->
+                <li>
+                    <img class="icons" src="assets/imagens/user.png" alt="perfil">
+                </li>
+
+                <!-- Agenda. -->
+                <li>
+                    <img class="icons" src="assets/imagens/agenda.png" alt="agenda">
+                </li>
+
+                <!-- Chat. -->
+                <li>
+                    <img class="icons" src="assets/imagens/chat.png" alt="chat">
+                </li>
+
+                <!-- Configuração. -->
+                <li>
+                    <img class="icons" src="assets/imagens/configuracao.png" alt="configuração">
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    
+    <div class="container">
+
+        <div class="menu"  [class.closed]="!isMenuClosed">            
+            <ul>               
+                <li>
+                    <a class="ancora nav-link home" [routerLink]="['/home-psicologo']" routerLinkActive="active">Home</a>
+                </li>
+                <li>
+                    <a class="ancora nav-link" [routerLink]="['/perfil-psicologo']" routerLinkActive="active perfil">Perfil</a>
+                </li>
+                <li>
+                    <a class="ancora nav-link agenda" [routerLink]="['/agenda-psicologo']" routerLinkActive="active">Agenda</a>
+                </li> 
+                <li>
+                    <a class="ancora nav-link chat" [routerLink]="['/chat-psicologo']" routerLinkActive="active">Chat</a>
+                </li>
+                <li>
+                    <a class="ancora nav-link configuracao" [routerLink]="['/configuracao-psicologo']" routerLinkActive="active">Configuração</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</body>
