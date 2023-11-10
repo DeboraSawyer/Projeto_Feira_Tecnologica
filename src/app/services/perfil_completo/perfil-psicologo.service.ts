@@ -374,6 +374,19 @@ export class PerfilPsicologoService {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Com o banco da dados.
 /*import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';

@@ -1,60 +1,230 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
 
-main {
-    border: 3px solid red;
+.titulo {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 90px;
+    backdrop-filter: blur(15px);
+    background: rgba(126, 255, 188, 0.5);
+    border-radius: 10px;
+    padding: 50px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #FFBC7E;
+}
+
+.sub {
+    text-transform: initial;
+    padding-top: 15px;
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #000;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1300px;
-    height: 100vh;
+    /*max-width: 1300px;
+    height: 100vh;*/
+    min-height: 68vh;
+    /*background-color: #f5f6fe;*/
+
+    backdrop-filter: blur(10px);
+    background: rgba(56, 109, 241, 0.05);
 }
 
-.paciente,
-.psicologo {
-    flex: 1;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
+.quadrado {
+    position: relative;
+    width: 357px;
+    height: 357px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+/* 1º Quadrado. */
+.quadrado span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #566ef0;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.quadrado:hover span:nth-child(1) {
+    border: none;
+    background: rgba(86,110,240,0.8);
+}
+
+/* 2º Quadrado. */
+.quadrado span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #8899f4;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.quadrado:hover span:nth-child(2) {
+    border: none;
+    background: rgba(136,153,2445,0.8);
+}
+
+/* 3º Quadrado. */
+.quadrado span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #bbc5f9;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.quadrado:hover span:nth-child(3) {
+    border: none;
+    background: rgba(170,182,247,0.8);
+}
+
+.quadrado1 {
+    position: relative;
+    width: 357px;
+    height: 357px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+/* 1º Quadrado1. */
+.quadrado1 span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FF9432;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+
+.quadrado1:hover span:nth-child(1) {
+    border: none;
+    background: rgba(255,148,50,0.8);
+}
+
+/* 2º Quadrado1. */
+.quadrado1 span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #ffb46f;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 4s linear infinite;
+}
+
+.quadrado1:hover span:nth-child(2) {
+    border: none;
+    background: rgba(255,180,111,0.8);
+}
+
+/* 3º Quadrado1. */
+.quadrado1 span:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FFC998;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 10s linear infinite;
+}
+
+.quadrado1:hover span:nth-child(3) {
+    border: none;
+    background: rgba(255,201,152,0.8);
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.content {
+    position: relative;
+    padding: 40px 60px;
+    color: red;
     text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
 }
 
-.paciente,
-.psicologo {
-    width: 45%;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
+.av {
+    background-color: #FFBC7E;
+    border: 3px solid #FFBC7E;
     border-radius: 10px;
-    margin: 10px;
+    padding: 30px;
+    margin: 0 50px;
+    margin-bottom: -50px;
+    position: relative;
+    z-index: 1;
+    /* Coloca o aviso na frente do footer. */
 }
 
-.paciente {
-    width: 45%;
-    background-color: #f2f2f2;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    margin: 10px;
+.aviso {
+    color: #fff;
+    font-weight: bold;
+    text-align: justify;
 }
 
-/* Estilo do botão Perfil completo. */
-.btn0 {
+.btn0,
+.btn {
     display: inline-block;
-    background-color: #fff;
-    color: #000;
-    border: 3px solid #113A76;
     padding: 8px 16px;
     border-radius: 10px;
     margin: 30px;
@@ -62,24 +232,31 @@ main {
     font-weight: bold;
 }
 
-/* Estilo do botão Marcar consulta. */
-.btn {
-    display: inline-block;
-    background-color: #113A76;
+.btn0 {
+    background-color: #566ef0;
     color: #fff;
-    border: 3px solid #113A76;
-    padding: 8px 16px;
-    border-radius: 10px;
-    margin: 30px;
-    text-decoration: none;
+    border: 3px solid #566ef0;
+    margin-bottom: 30px;
+    position: relative;
     transition: background 0.3s ease;
     font-weight: bold;
 }
 
+.btn {
+    background-color: #ff9432;
+    color: #fff;
+    border: 3px solid #ff9432;
+    transition: background 0.3s ease;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
 .btn0:hover {
-    background: linear-gradient(to right, #fff, #FFF599);
+    background: #fff;
+    color: #000;
 }
 
 .btn:hover {
-    background: linear-gradient(to right, #113A76, #FFBC7E);
+    background: #fff;
+    color: #000;
 }

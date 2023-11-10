@@ -1,5 +1,6 @@
 main {
     /*border: 3px solid red;*/
+    font-family: 'Inter', sans-serif;
 }
 
 /* ANIMAÇÃO DO TEXTO. */
@@ -9,7 +10,6 @@ main {
     height: 380px;
     display: grid;
     place-items: center;
-    font-family: 'Inter', sans-serif;
     font-size: 48px;
     /*29px;*/
     font-weight: 600;
@@ -77,6 +77,34 @@ span {
 /* FIM DA ANIMAÇÃO DO TEXTO. */
 
 /* BARRAS DE PROCURA. */
+.search-container {
+    /*border: 3px solid yellow;*/
+    text-align: center;
+    background: rgba(255, 188, 126, 0.3);
+    /* Esta é a cor em hex #FFBC7E; Laranja. */
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+.search-category {
+    margin: 10px;
+    /*display: inline-block;*/
+    display: block;
+}
+
+#specialty,
+#approaches,
+#name {
+    width: 370px;
+    padding: 5px;
+    color: #000000;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid #113A76;
+    border-radius: 10px solid #113A76;
+    background-color: #f5f6fe;
+}
 
 .search-container {
     /*border: 3px solid yellow;*/
@@ -100,11 +128,54 @@ span {
     color: #000000;
     cursor: pointer;
     font-size: 16px;
-    font-family: 'Inter', sans-serif;
     border-radius: 10px;
     border: 3px solid #113A76;
     border-radius: 10px solid #113A76;
     background-color: #f5f6fe;
+}
+
+/* Barra e procura.*/
+.search-category1 {
+    width: 370px;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+#name1 {
+    width: 100%;
+    padding: 7px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #113A76;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 3px solid #113A76;
+    border-radius: 10px solid #113A76;
+}
+
+.filtered-names {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.filtered-names .campo-texto {
+    padding: 10px;
+    border: 1.16px solid #113A76;
+    background-color: #f5f6fe;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.filtered-names .campo-texto:hover {
+    background: rgba(156, 170, 246, 0.3);
+    /* Esta é a cor em hex #FFBC7E; Laranja. */
+    backdrop-filter: blur(10px);
 }
 
 /* Estilo do botão secundário. */
@@ -115,7 +186,6 @@ span {
     color: #000;
     font-size: 16px;
     text-decoration: none;
-    font-family: 'Inter', sans-serif;
     border: 3px solid #9CAAF6;
     border-radius: 10px;
     cursor: pointer;
@@ -137,6 +207,7 @@ span {
 /* FIM DA BARRA PROCURA. */
 
 .tituloPerfis {
+    position: relative;
     justify-content: center;
     /*border: 3px solid blueviolet;*/
     display: flex;
@@ -148,7 +219,7 @@ span {
     /* Esta é a cor em hex #FF599; Amarelo. */
     font-size: 16px;
     color: #113A76;
-    font-family: 'Inter', sans-serif;
+    z-index: -10;
 }
 
 /* FIM DO TÍTULO. */
@@ -176,7 +247,6 @@ span {
     padding: 20px;
     text-align: center;
     position: relative;
-    font-family: 'Inter', sans-serif;
     flex: 0 0 calc(50% - 60px);
     /* 2 cards por linha com 60px de espaço entre eles. */
     margin: 30px;
@@ -307,7 +377,6 @@ span {
     background-color: #113A76;
     color: #fff;
     border: 3px solid #113A76;
-    font-family: 'Inter', sans-serif;
     font-size: 16px;
     padding: 8px 16px;
     border-radius: 10px;
@@ -351,7 +420,6 @@ span {
 
 .aviso {
     color: #fff;
-    font-family: 'Inter', sans-serif;
     font-weight: bold;
     text-align: justify;
 }
@@ -362,10 +430,10 @@ span {
 
 /*and (max-width: 299px)*/
     {
-    main {
+    /* main {
         border: 3px solid red;
         /*width: 361px;*/
-    }
+    /*}*/
 
     .box {
         border: 3px solid rgb(0, 238, 255);
@@ -423,10 +491,10 @@ span {
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
-    main {
+    /*main {
         border: 3px solid red;
         /*width: 363px;*/
-    }
+    /*}*/
 
     .textomovimento {
         padding: 10px 25px;
@@ -478,10 +546,10 @@ span {
 /* FALTA ESTA PARTE 400PX DO PROJETO ORIGINAL. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 400px) and (max-width: 499px) {
-    main {
+    /*main {
         border: 3px solid red;
         /*width: 395px;*/
-    }
+    /*}*/
 
     .textomovimento {
         height: 90px;
@@ -533,10 +601,10 @@ span {
 
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 500px) and (max-width: 585px) {
-    main {
+    /*main {
         border: 3px solid red;
         /*width: 495px;*/
-    }
+    /*}*/
 
     .textomovimento {
         height: 90px;
@@ -585,10 +653,10 @@ span {
 
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 586px) and (max-width: 699px) {
-    main {
+    /*main {
         border: 3px solid red;
         /*width: 582px;*/
-    }
+    /*}*/
 
     .textomovimento {
         height: 90px;
@@ -629,10 +697,10 @@ span {
 
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 700px) and (max-width: 800px) {
-    main {
+    /*main {
         border: 3px solid red;
         /*width: 698px;*/
-    }
+    /*}*/
 
     .textomovimento {
         height: 90px;
@@ -658,10 +726,10 @@ span {
 /* Está pronto. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 801px) and (max-width: 1146px) {
-    main {
+    /*main {
         border: 3px solid red;
         /*width: 793px;*/
-    }
+    /*}*/
 
     .textomovimento {
         font-size: 40px;

@@ -32,7 +32,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:3000'; // URL do servidor Node.js.
+  private apiUrl = 'http://localhost:3000'; // 3000 URL do servidor Node.js.
 
   constructor(private http: HttpClient) { }
 
@@ -48,5 +48,3 @@ export class TaskService {
     return this.http.post<any>(`${this.apiUrl}/psicologos`, psicologo);
   }
 }
-
-

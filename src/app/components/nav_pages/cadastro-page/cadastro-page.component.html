@@ -1,19 +1,106 @@
-<main>
-    <div class="container">
-        <section class="paciente">
-            <h2>Paciente</h2>
-            <a class="btn0" [routerLink]="['/cadastro-paciente']">Cadastrar-se</a>
-        </section>
-        <br><br>
+<body>
+    <!-- Bolhas. -->
+    <div class="container0">
+        <div class="bubbles">
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
 
-        <section class="psicologo">
-            <h2>Psicólogo</h2>
-            <a class="btn" [routerLink]="['/cadastro-psicologo']">Cadastrar-se</a>
-        </section>
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+
+            <span style="--i:11;"></span>
+            <span style="--i:12;"></span>
+            <span style="--i:24;"></span>
+            <span style="--i:10;"></span>
+            <span style="--i:14;"></span>
+            <span style="--i:23;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:16;"></span>
+            <span style="--i:19;"></span>
+            <span style="--i:20;"></span>
+            <span style="--i:22;"></span>
+            <span style="--i:25;"></span>
+            <span style="--i:18;"></span>
+            <span style="--i:21;"></span>
+            <span style="--i:15;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:26;"></span>
+            <span style="--i:17;"></span>
+            <span style="--i:13;"></span>
+            <span style="--i:28;"></span>
+        </div>
+
+        <!-- Título. -->
+        <div class="titulo">
+            <h1>Cuide da sua saúde mental conosco</h1>
+            <p class="sub">Bem-vindo à nossa plataforma dedicada ao cuidado com a saúde mental.</p>
+        </div>
+
+        <!-- Área do paciente. -->
+        <div class="container">
+            <section class="paciente">
+                <h2>Paciente</h2>
+                <div class="moldura">
+                    <img src="assets/imagens/social-care.gif" alt="Icone cuidado-social" />
+                </div>
+                <a class="btn0" [routerLink]="['/cadastro-paciente']">Cadastrar-se</a>
+            </section>
+            <br><br>
+
+            <!-- Área do psicólogo. -->
+            <section class="psicologo">
+                <h2>Psicólogo</h2>
+                <div class="moldura">
+                    <img src="assets/imagens/psychology.gif" alt="Icone psicologia" />
+                </div>
+                <a class="btn" [routerLink]="['/cadastro-psicologo']">Cadastrar-se</a>
+            </section>
+        </div>
     </div>
-</main>
 
-<!--<a class="btn0" [routerLink]="['/login-paciente', paciente.id]" >Perfil Completo</a>
-<a class="btn0" [routerLink]="['/login-psicologo', psicologo.id]" >Perfil Completo</a>-->
-
-<!--<a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil Completo</a>-->
+    <!-- Aviso. -->
+    <section class="av">
+        <div class="aviso">
+            <p>Atenção: Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida.
+                Em caso de crise, ligue para 188 (CVV) ou acesse o site www.cvv.org.br. Em caso de emergência,
+                procure atendimento em um hospital mais próximo.
+            <p>
+        </div>
+    </section>
+</body>

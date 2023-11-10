@@ -149,6 +149,10 @@ export class PerfisPsicologosService {
   obterPerfilPorId(id: string) {
     return this.perfis.find((perfil) => perfil.id === id);
   }
+
+  getProfessionalByName(name: string) {
+    return this.perfis.find(profissional => profissional.nome === name);
+  }
 }
 
 // Quando o banco de dados estiver pronto.

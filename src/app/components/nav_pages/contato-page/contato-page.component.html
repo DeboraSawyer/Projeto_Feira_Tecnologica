@@ -1,30 +1,32 @@
 <body>
-<div class="box">
+  <div class="box">
     <form (ngSubmit)="enviarMensagem()" action="https://api.staticforms.xyz/submit" method="post">
       <fieldset>
         <legend>
           <h2><b>Contate-nos</b></h2>
         </legend>
-  
+        <br>
         <div class="inputbox">
           <input type="text" name="nome" id="nome" class="inputUser" required>
           <label for="nome" class="labelInput"><b>Nome Completo:</b></label>
         </div>
-  
+        <br>
         <div class="inputbox">
           <input type="email" name="email" id="email" class="inputUser" required>
           <label for="email" class="labelInput"><b>Email:</b></label>
         </div>
-  
+        <br>
+
         <label for="mensagem"><b>Mensagem:</b></label>
+        <br> <br>
         <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem..." id="text"></textarea>
-  
+
         <input type="submit" name="submit" id="submit">
         <input type="hidden" name="accessKey" value="73249cc7-d801-4eb6-9f76-5baf8fced903">
         <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
       </fieldset>
     </form>
-  
+
     <!-- Mensagem de agradecimento. -->
     <div *ngIf="mensagemEnviada" class="main">
       <h1 id="text1">Obrigado pela mensagem!</h1>
@@ -32,10 +34,10 @@
       <a class="ancora nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
     </div>
   </div>
-  </body>
+</body>
 
 <!-- AQUI!!!!!!!!!!-->
-  <!-- <div class="box">
+<!-- <div class="box">
     <form (ngSubmit)="enviarMensagem()" action="https://api.staticforms.xyz/submit" method="post">
       <fieldset>
         <legend>
@@ -60,9 +62,9 @@
         <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/obrigado.html">
       </fieldset>
     </form>-->
-  
-    <!-- Mensagem de agradecimento. -->
-    <!--<div *ngIf="mensagemEnviada" class="main">
+
+<!-- Mensagem de agradecimento. -->
+<!--<div *ngIf="mensagemEnviada" class="main">
       <h1 id="text1">Obrigado pela mensagem!</h1>
       <p id="paragrafo">Retornaremos a mensagem o mais rápido possível</p>
       <a class="ancora nav-link" [routerLink]="['/home']" routerLinkActive="active">Home</a>
@@ -70,7 +72,7 @@
   </div>-->
 
 
-  <!-- npm install @angular/forms -->
+<!-- npm install @angular/forms -->
 
 
 

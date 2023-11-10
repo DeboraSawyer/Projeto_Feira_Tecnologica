@@ -24,7 +24,7 @@
     <section class="search-container">
 
         <!-- Procure por Especialidade. -->
-        <div class="search-category">
+        <!--<div class="search-category">
             <select id="specialty">
                 <option value="all" disabled selected>Escolha uma especialidade</option>
                 <option class="opcoes" value="psicologia_clinica">Psicologia Clínica</option>
@@ -45,10 +45,17 @@
                 <option value="psicologia_consumidor">Psicologia do Consumidor</option>
                 <option value="psicologia_transcultural">Psicologia Transcultural</option>
             </select>
-        </div>
+        </div>-->
+
+        <!-- Procure por Especialidade ATUALIZADO. -->
+        <!--<div class="search-category">
+            <select id="specialty" [(ngModel)]="selectedSpecialty">
+                <option *ngFor="let specialty of specialties" [value]="specialty.value">{{specialty.name}}</option>
+            </select>
+        </div>-->
 
         <!-- Procure por Abordagem. -->
-        <div class="search-category">
+        <!--<div class="search-category">
             <select id="approaches">
                 <option value="all" disabled selected>Escolha uma abordagem</option>
                 <option value="Abordagem_psicanalitica">Abordagem Psicanalítica</option>
@@ -68,15 +75,23 @@
                 <option value="Abordagem_construtivista">Abordagem Construtivista</option>
                 <option value="Abordagem_integral">Abordagem Integral</option>
             </select>
-        </div>
+        </div>-->
 
-        <!-- Procure por nome. -->
-        <div class="search-category">
-            <input type="text" id="name" placeholder="Digite o nome do profissional...">
+        <!-- Campo de entrada de texto ATUALIZADO. -->
+        <div class="search-category1">
+            <input id="name1" type="text" [(ngModel)]="searchTerm" (input)="searching()"
+                placeholder="Digite o nome do profissional...">
+            <div class="filtered-names" *ngFor="let name of filteredNames">
+                <div class="campo-texto">
+                    <div *ngIf="searchTerm" (click)="selectName(name)">
+                        {{name}}
+                    </div>
+                </div>
+            </div>
         </div>
 
         <!-- Botão de procura. -->
-        <button id="search-button">Procurar</button>
+        <button id="search-button" (click)="search()">Procurar</button>
     </section>
 
     <!-- Resultado. -->
@@ -89,39 +104,66 @@
         </div>
     </section>
 
-    <!-- Card. -->
     <section class="card-container">
-        <!-- Perfis. -->
-        <div class="card" *ngFor="let perfil of perfisVisiveis">
+        <!-- Se um psicólogo for selecionado, vai ser exibido apenas o perfil selecionado. -->
+        <div *ngIf="selectedProfessional else allProfiles" class="card">
             <div class="profile-picture">
-                <img [src]="perfil.imagem_src" alt="{{ perfil.nome }}">
+                <img [src]="selectedProfessional.imagem_src" alt="{{ selectedProfessional.nome }}">
             </div>
 
-            <h3>{{ perfil.nome }}</h3>
-            <p class="p">{{ perfil.especialidade }}</p>
+            <h3>{{ selectedProfessional.nome }}</h3>
+            <p class="p">{{ selectedProfessional.especialidade }}</p>
 
             <p class="sbt">Especializações:</p>
-            <p class="cb">{{ perfil.especializacao1 }}</p>
-            <p class="cb">{{ perfil.especializacao2 }}</p>
-            <p class="cb">{{ perfil.especializacao3 }}</p>
+            <p class="cb">{{ selectedProfessional.especializacao1 }}</p>
+            <p class="cb">{{ selectedProfessional.especializacao2 }}</p>
+            <p class="cb">{{ selectedProfessional.especializacao3 }}</p>
 
             <p class="sbt">Abordagem Terapêutica:</p>
-            <p>{{ perfil.abordagem }}</p>
+            <p>{{ selectedProfessional.abordagem }}</p>
 
             <p class="sbt">Biografia:</p>
-            <p>{{ perfil.biografia }}</p>
+            <p>{{ selectedProfessional.biografia }}</p>
 
-            <!-- Botão Perfil completo. -->
-            <a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil Completo</a>
+            <!-- Botão Perfil Completo. -->
+            <a class="btn0" [routerLink]="['/perfil-completo', selectedProfessional.id]">Perfil Completo</a>
 
-            <!-- Botão Marcar consulta. -->
-            <a class="btn" [routerLink]="['/login']" >Marcar Consulta</a>
+            <!-- Botão Marcar Consulta. -->
+            <a class="btn" [routerLink]="['/login']">Marcar Consulta</a>
         </div>
+
+        <!-- Se nenhum psicólogo for selecionado, vai ser exibido todos os perfis. -->
+        <ng-template #allProfiles>
+            <div *ngFor="let perfil of perfisVisiveis" class="card">
+                <div class="profile-picture">
+                    <img [src]="perfil.imagem_src" alt="{{ perfil.nome }}">
+                </div>
+
+                <h3>{{ perfil.nome }}</h3>
+                <p class="p">{{ perfil.especialidade }}</p>
+
+                <p class="sbt">Especializações:</p>
+                <p class="cb">{{ perfil.especializacao1 }}</p>
+                <p class="cb">{{ perfil.especializacao2 }}</p>
+                <p class="cb">{{ perfil.especializacao3 }}</p>
+
+                <p class="sbt">Abordagem Terapêutica:</p>
+                <p>{{ perfil.abordagem }}</p>
+
+                <p class="sbt">Biografia:</p>
+                <p>{{ perfil.biografia }}</p>
+
+                <!-- Botão Perfil Completo. -->
+                <a class="btn0" [routerLink]="['/perfil-completo', perfil.id]">Perfil Completo</a>
+
+                <!-- Botão Marcar Consulta. -->
+                <a class="btn" [routerLink]="['/login']">Marcar Consulta</a>
+            </div>
+        </ng-template>
     </section>
 
     <div class="hibrido">
         <!-- Botão Ver mais. -->
-        <!--<button class="ver-mais" [class]="botaoClass" (click)="toggleMostrarMais()">{{ botaoLabel }}</button>-->
         <button class="ver-mais" (click)="toggleMostrarMais()">{{ botaoLabel }}</button>
     </div>
 

@@ -1,19 +1,41 @@
 <main>
-    <div class="container">
-        <section class="paciente">
-            <h2>Paciente</h2>
-            <a class="btn0" [routerLink]="['/login-paciente']">log in</a>
-        </section>
-        <br><br>
-
-        <section class="psicologo">
-            <h2>Psicólogo</h2>
-            <a class="btn" [routerLink]="['/login-psicologo']">log in</a>
-        </section>
+    <!-- Título. -->
+    <div class="titulo">
+        <h1>Bem-vindo de volta!</h1>
+        <p class="sub">Por favor, faça login para continuar.</p>
     </div>
+
+    <!-- Área do paciente. -->
+    <section class="container">
+        <div class="quadrado">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>Paciente</h2>
+                <a class="btn0" [routerLink]="['/login-paciente']">Log in</a>
+            </div>
+        </div>
+
+        <!-- Área do psicólogo. -->
+        <div class="quadrado1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="content">
+                <h2>Psicólogo</h2>
+                <a class="btn" [routerLink]="['/login-psicologo']">Log in</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Aviso. -->
+    <section class="av">
+        <div class="aviso">
+            <p>Atenção: Este site não oferece tratamento ou aconselhamento imediato para pessoas em crise suicida.
+                Em caso de crise, ligue para 188 (CVV) ou acesse o site www.cvv.org.br. Em caso de emergência,
+                procure atendimento em um hospital mais próximo.
+            <p>
+        </div>
+    </section>
 </main>
-
-<!--<a class="btn0" [routerLink]="['/login-paciente', paciente.id]" >Perfil Completo</a>
-<a class="btn0" [routerLink]="['/login-psicologo', psicologo.id]" >Perfil Completo</a>-->
-
-<!--<a class="btn0" [routerLink]="['/perfil-completo', perfil.id]" >Perfil Completo</a>-->

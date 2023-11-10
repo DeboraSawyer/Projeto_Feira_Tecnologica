@@ -56,7 +56,11 @@ const routes: Routes = [
   { path: 'painel-psicologo', component: DashboardPsicologoComponent, data: { hideMenu: true } },
 
   { path: 'home-paciente', component: HomePagePacienteComponent },
-  { path: 'home-psicologo', component: HomePagePsicologoComponent, data: { hideMenu: true } }
+  { path: 'home-psicologo', component: HomePagePsicologoComponent, data: { hideMenu: true } },
+
+  // Sempre por último na configuração.
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', redirectTo: 'home', pathMatch: 'full' }
 ];
 
 @NgModule({

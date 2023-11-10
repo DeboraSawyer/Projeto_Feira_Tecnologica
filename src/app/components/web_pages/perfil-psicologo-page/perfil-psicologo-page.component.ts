@@ -22,28 +22,9 @@ export class PerfilPsicologoPageComponent implements OnInit {
     if (id) {
       // Usa o serviço 'PerfilPsicologoService' para obter as informações completas do psicólogo com base no ID.
       this.psicologo = this.perfilPsicologoService.obterInformacoesCompletas(id);
-    } else {
-      // Vou tratar o caso em que 'id' é nulo (por exemplo, redirecionar para uma página de erro).
-      // this.router.navigate(['/pagina-de-erro']); // Preciso injetar o serviço de roteamento.
     }
   }
 }
-
-/*let sections = document.querySelectorAll('section');
-window.onscroll = () => {
-  sections.forEach(sec => {
-    let top = window.scrollY;
-    let offset = sec.offsetTop - 150;
-    let height = sec.offsetHeight;
-    
-    if (top >= offset && top < offset + height) {
-      sec.classList.add('show-animate');
-    }else {
-      sec.classList.remove('show-animate')
-    }
-  });
-}*/
-
 
 // Com o Banco de Dados.
 /*import { Component, OnInit } from '@angular/core';

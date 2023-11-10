@@ -4,9 +4,8 @@ footer {
     background-color: #FFF599;
     color: #113A76;
     text-transform: uppercase;
-    /*font-family: 'Inter', sans-serif;*/
-    font-family: Arial, Helvetica, sans-serif;
     padding: 60px 0;
+    font-family: 'Inter', sans-serif;
 }
 
 /* Estilo do conteúdo do footer. */
