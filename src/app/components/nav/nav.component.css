@@ -152,5 +152,7 @@ ul .button-link {
     /* Estilo do Menu hambúrguer quando está ativo. */
     .hamburger.active+ul {
         display: flex;
+        top: 91px;
+        /* 91px 90px */
     }
 }

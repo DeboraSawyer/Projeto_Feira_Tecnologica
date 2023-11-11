@@ -98,7 +98,7 @@ export class PerfisPageComponent implements OnInit {
         // Limpa o campo de busca.
         this.searchTerm = '';
       } else {
-        console.log('Profissional não encontrado.');
+        //console.log('Profissional não encontrado.');
       }
     }
   }
@@ -107,7 +107,7 @@ export class PerfisPageComponent implements OnInit {
     this.perfis = this.perfisService.obterPerfis();
     this.atualizarPerfisVisiveis(); // Inicializa os perfis visíveis.
 
-    console.log('Perfis Visíveis:', this.perfisVisiveis);
+    //console.log('Perfis Visíveis:', this.perfisVisiveis);
   }
 
   toggleMostrarMais() {

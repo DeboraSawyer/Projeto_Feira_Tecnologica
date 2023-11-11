@@ -426,6 +426,7 @@ span {
 
 /* FIM DO AVISO. */
 
+/* Incompleto! */
 @media (max-width: 200px)
 
 /*and (max-width: 299px)*/
@@ -490,6 +491,7 @@ span {
     }
 }
 
+/* Incompleto! */
 @media (min-width: 300px) and (max-width: 399px) {
     /*main {
         border: 3px solid red;
@@ -543,7 +545,7 @@ span {
     }
 }
 
-/* FALTA ESTA PARTE 400PX DO PROJETO ORIGINAL. */
+/* Está pronto após o Angular. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 400px) and (max-width: 499px) {
     /*main {
@@ -599,6 +601,7 @@ span {
     }
 }
 
+/* Está pronto após o Angular. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 500px) and (max-width: 585px) {
     /*main {
@@ -651,6 +654,7 @@ span {
     }
 }
 
+/* Está pronto após o Angular. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 586px) and (max-width: 699px) {
     /*main {
@@ -695,6 +699,7 @@ span {
     }
 }
 
+/* Está pronto após o Angular. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 700px) and (max-width: 800px) {
     /*main {
@@ -723,7 +728,7 @@ span {
     /* FIM DA ANIMAÇÃO DO TEXTO. */
 }
 
-/* Está pronto. */
+/* Está pronto após o Angular. */
 /* Estilos gerais (para telas pequenas). */
 @media (min-width: 801px) and (max-width: 1146px) {
     /*main {
@@ -736,9 +741,14 @@ span {
     }
 }
 
-/* Está pronto.*/
+/* Está pronto após o Angular.*/
 /* Estilos para telas grandes (por exemplo, desktops). */
 @media (max-width: 1147px) {
+    .tituloPerfis {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
     .button-link {
         padding: 16px 32px;
         /* Aumenta ainda mais o tamanho do botão. */
@@ -768,7 +778,7 @@ span {
     }
 }
 
-/* Está pronto.*/
+/* Está pronto após o Angular.*/
 /* Estilos para telas grandes (por exemplo, desktops). */
 @media (max-width: 1280px) {
     .search-category {
